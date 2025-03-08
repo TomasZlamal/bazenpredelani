@@ -4,8 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bazén Slovany</title>
-        @vite(['resources/css/tailwind_output.css'])
-        @vite(['resources/js/app.js'])
+        @vite('resources/css/tailwind_output.css')
+        @vite('resources/js/app.js')
     </head>
     <body>
         <header>
@@ -21,20 +21,20 @@
                             <div class="hidden nav:ml-6 nav:block">
                                 <div class="flex space-x-4">
                                     <ul class="flex justify-between gap-8 mb-0">
-                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Dostupnost</a></li>
-                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Bazénový svět</a></li>
-                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Sauna a pára</a></li>
-                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Plavecký klub</a></li>
-                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Plavecká škola</a></li>
-                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Ceník</a></li>
-                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Ubytování</a></li>
-                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Ostatní služby</a></li>
+                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="dostupnost">Dostupnost</a></li>
+                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="bazen">Bazénový svět</a></li>
+                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="sauna">Sauna a pára</a></li>
+                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="https://www.plaveckyklubplzen.cz/">Plavecký klub</a></li>
+                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="https://www.plaveckaskolaplzen.cz/plavecka-skola-plzen-slovany/">Plavecká škola</a></li>
+                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="cenik">Ceník</a></li>
+                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="ubytovani">Ubytování</a></li>
+                                        <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="ostatnisluzby">Ostatní služby</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <!-- Mobile menu button-->
-                        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-bs-black focus:outline-none nav:hidden" aria-controls="mobile-menu" aria-expanded="false">
+                        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 bg-black focus:outline-none nav:hidden bg-current" aria-controls="mobile-menu" aria-expanded="false">
                             <!--
                             Icon when menu is closed.
 
