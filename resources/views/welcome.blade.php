@@ -25,7 +25,7 @@
             <div class="grid gap-6 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                 <article class="lg:first:col-span-1 md:first:col-span-2 rounded-lg overflow-hidden shadow-md">
                     <a href="#" class="block overflow-hidden m-0">
-                        <img src="post-img.png" alt="Post image" class="aspect-[16/10] w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
+                        <img src="post-img.png" alt="Post image" class="aspect-16/10 w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
                     </a>
                     <div class="bg-bs-grey-150 px-6 pt-4 pb-6 h-full">
                         <h3 class="mb-2">Zavřeno lol</h3>
@@ -35,7 +35,7 @@
                 </article>
                 <article class="lg:first:col-span-1 md:first:col-span-2 rounded-lg overflow-hidden shadow-md">
                     <a href="#" class="block overflow-hidden m-0">
-                        <img src="post-img.png" alt="Post image" class="aspect-[16/10] w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
+                        <img src="post-img.png" alt="Post image" class="aspect-16/10 w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
                     </a>
                     <div class="bg-bs-grey-150 px-6 pt-4 pb-6 h-full">
                         <h3 class="mb-2">Tohle se aktuálně děje</h3>
@@ -45,7 +45,7 @@
                 </article>
                 <article class="lg:first:col-span-1 md:first:col-span-2 rounded-lg overflow-hidden shadow-md">
                     <a href="#" class="block overflow-hidden m-0">
-                        <img src="plavec.png" alt="Post image" class="aspect-[16/10] object-cover w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
+                        <img src="plavec.png" alt="Post image" class="aspect-16/10 object-cover w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
                     </a>
                     <div class="bg-bs-grey-150 px-6 pt-4 pb-6 h-full">
                         <h3 class="mb-2">Tohle se aktuálně děje</h3>
@@ -63,14 +63,14 @@
                 <p>Máte otázky? Zavolejte nám na recepci a rádi vám poradíme.</p>
             </div>
             <div class="lg:col-span-3 col-span-full w-full">
-                <div class="mb-4 last-of-type:mb-0 rounded-lg shadow-sm">
+                <div class="mb-4 last-of-type:mb-0 rounded-lg shadow-xs">
                     <input type="checkbox" id="faq1" class="peer hidden" />
                     <label role="button" for="faq1" class="ico-faq block relative cursor-pointer font-medium text-bs-blue-900 bg-bs-blue-200 bg-opacity-45 py-4 px-4 peer-checked:rounded-t-lg peer-checked:rounded-b-none rounded-lg peer-checked:border-b-bs-blue-200 peer-checked:border-b-2"> Jaká je teplota vody v bazénech? </label>
                     <div class="p-4 hidden peer-checked:block bg-bs-blue-200 bg-opacity-30 rounded-b-lg">
                         <p class="text-bs-blue-950">Velký vnitřní bazén je vytápěný na 27˚C, malý bazén na 29˚C. Venkovní bazén se pohybuje kolem 24 - 26˚C, dle počasí.</p>
                     </div>
                 </div>
-                <div class="mb-4 last-of-type:mb-0 rounded-lg shadow-sm">
+                <div class="mb-4 last-of-type:mb-0 rounded-lg shadow-xs">
                     <input type="checkbox" id="faq2" class="peer hidden" />
                     <label role="button" for="faq2" class="ico-faq block relative cursor-pointer font-medium text-bs-blue-900 bg-bs-blue-200 bg-opacity-45 py-4 px-4 peer-checked:rounded-t-lg peer-checked:rounded-b-none rounded-lg peer-checked:border-b-bs-blue-200 peer-checked:border-b-2"> Je bazén momentálně otevřený? </label>
                     <div class="p-4 hidden peer-checked:block bg-bs-blue-200 bg-opacity-30 rounded-b-lg">
@@ -88,8 +88,8 @@
                 <p class="text-center">Podívejte se, co všechno můžete zažít u nás v areálu.</p>
             </div>
 
-            <div class="grid lg:aspect-[8/3] lg:grid-cols-10 lg:grid-rows-2 md:grid-cols-5 md:grid-rows-showcase-grid grid-cols-1 sm:grid-rows-1 gap-8 w-full">
-                <figure class="relative rounded-lg overflow-clip lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-2 md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-[16/9]">
+            <div class="grid lg:aspect-8/3 lg:grid-cols-10 lg:grid-rows-2 md:grid-cols-5 md:grid-rows-showcase-grid grid-cols-1 sm:grid-rows-1 gap-8 w-full">
+                <figure class="relative rounded-lg overflow-clip lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-2 md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-16/9">
                     <a href="#" class="group">
                         <img src="bazen.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
@@ -98,7 +98,7 @@
                     </a>
                 </figure>
 
-                <figure class="relative rounded-lg overflow-clip lg:col-start-4 lg:col-end-6 lg:row-start-1 lg:row-end-2 md:col-start-4 md:col-end-6 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-[16/9]">
+                <figure class="relative rounded-lg overflow-clip lg:col-start-4 lg:col-end-6 lg:row-start-1 lg:row-end-2 md:col-start-4 md:col-end-6 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-16/9">
                     <a href="#" class="group">
                         <img src="divoka-reka.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
@@ -107,7 +107,7 @@
                     </a>
                 </figure>
 
-                <figure class="relative rounded-lg overflow-clip lg:col-start-6 lg:col-end-8 lg:row-start-1 lg:row-end-3 md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-4 md:aspect-[initial] aspect-[16/9]">
+                <figure class="relative rounded-lg overflow-clip lg:col-start-6 lg:col-end-8 lg:row-start-1 lg:row-end-3 md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-4 md:aspect-[initial] aspect-16/9">
                     <a href="#" class="group">
                         <img src="plavec.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
@@ -116,7 +116,7 @@
                     </a>
                 </figure>
 
-                <figure class="relative rounded-lg overflow-clip lg:col-start-8 lg:col-end-11 lg:row-start-1 lg:row-end-1 md:col-start-3 md:col-end-6 md:row-start-2 md:row-end-3 md:aspect-[initial] aspect-[16/9]">
+                <figure class="relative rounded-lg overflow-clip lg:col-start-8 lg:col-end-11 lg:row-start-1 lg:row-end-1 md:col-start-3 md:col-end-6 md:row-start-2 md:row-end-3 md:aspect-[initial] aspect-16/9">
                     <a href="#" class="group">
                         <img src="ubytovani.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
@@ -125,7 +125,7 @@
                     </a>
                 </figure>
 
-                <figure class="relative rounded-lg overflow-clip lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 md:col-start-3 md:col-end-6 md:row-start-3 md:row-end-4 md:aspect-[initial] aspect-[16/9]">
+                <figure class="relative rounded-lg overflow-clip lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 md:col-start-3 md:col-end-6 md:row-start-3 md:row-end-4 md:aspect-[initial] aspect-16/9">
                     <a href="#" class="group">
                         <img src="sauna-para.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
@@ -134,7 +134,7 @@
                     </a>
                 </figure>
 
-                <figure class="relative rounded-lg overflow-clip lg:col-start-3 lg:col-end-6 lg:row-start-2 lg:row-end-3 md:col-start-1 md:col-end-4 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-[16/9]">
+                <figure class="relative rounded-lg overflow-clip lg:col-start-3 lg:col-end-6 lg:row-start-2 lg:row-end-3 md:col-start-1 md:col-end-4 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-16/9">
                     <a href="#" class="group">
                         <img src="wellness.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
@@ -143,7 +143,7 @@
                     </a>
                 </figure>
 
-                <figure class="relative rounded-lg overflow-clip lg:col-start-8 lg:col-end-11 lg:row-start-2 lg:row-end-3 md:col-start-4 md:col-end-6 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-[16/9]">
+                <figure class="relative rounded-lg overflow-clip lg:col-start-8 lg:col-end-11 lg:row-start-2 lg:row-end-3 md:col-start-4 md:col-end-6 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-16/9">
                     <a href="#" class="group">
                         <img src="lochotin.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">

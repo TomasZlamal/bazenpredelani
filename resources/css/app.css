@@ -1,8 +1,68 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..700;1,400..700&display=swap')
+layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@utility dropdown {
+  &::after {
+    content: url(../assets/ico-dropdown.svg);
+    @apply inline-block w-2.5 pl-2 relative bottom-0.5;
+  }
+}
+@utility bg-image {
+  background-image: url(../assets/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@utility ico-link-arrow {
+  &::after {
+    content: '⟶';
+    /* content: "➔"; */
+    text-decoration: none;
+    padding-left: 0.25rem;
+    transition: padding 150ms ease-in-out;
+    display: inline-block;
+  }
+  &:hover::after {
+    padding-left: 0.6rem;
+  }
+}
+@utility ico-link-external {
+  display: flex;
+  align-content: start;
+  &::after {
+    content: url(../assets/ico-link-external.svg);
+    @apply pl-[0.15rem] leading-[0.75rem] top-0 right-0;
+  }
+}
+@utility ico-faq {
+  &::after {
+    content: url(../assets/ico-open-right.svg);
+    @apply inline-block absolute h-auto right-4 top-[0.885rem] rotate-0 transition-all;
+  }
+  input[type='checkbox']:checked + &label::after {
+    @apply rotate-90 right-5 top-3;
+  }
+}
+@utility tel {
+  &::before {
+    content: url(../assets/ico-call.svg);
+    @apply mr-2 relative top-0.5;
+  }
+}
+@utility mail {
+  &::before {
+    content: url(../assets/ico-mail.svg);
+    @apply mr-2 relative top-0.5;
+  }
+}
+@utility max-width-container {
+  @apply max-w-content mx-auto;
+}
+@utility max-width-blog-container {
+  @apply max-w-article mx-auto;
+}
 
 @layer base {
     * {
@@ -129,68 +189,16 @@
     }
 }
 @layer components {
-    .dropdown::after {
-        content: url(../assets/ico-dropdown.svg);
-        @apply inline-block w-2.5 pl-2 relative bottom-0.5;
-    }
-    .bg-image {
-        background-image: url(../assets/hero.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
     #hero::before {
         content: "";
         background: linear-gradient(132.498deg, rgba(19, 19, 19, 72%) 62%, rgba(19, 19, 19, 42%) 89%, rgba(19, 19, 19, 0%) 100%);
 
-        @apply block absolute top-0 left-0 pointer-events-none w-full h-full z-[1];
+        @apply block absolute top-0 left-0 pointer-events-none w-full h-full z-1;
     }
     #hero::after {
         content: url(../assets/wave.svg);
         width: 100%;
-        @apply w-full h-auto block absolute bottom-[-0.44rem] left-0 z-[2];
-    }
-    .ico-link-arrow::after {
-        content: "⟶";
-        /* content: "➔"; */
-        text-decoration: none;
-        padding-left: 0.25rem;
-        transition: padding 150ms ease-in-out;
-        display: inline-block;
-    }
-    .ico-link-arrow:hover::after {
-        padding-left: 0.6rem;
-    }
-    .ico-link-external {
-        display: flex;
-        align-content: start;
-    }
-    .ico-link-external::after {
-        content: url(../assets/ico-link-external.svg);
-        @apply pl-[0.15rem] leading-[0.75rem] top-0 right-0;
-    }
-    .ico-faq::after {
-        content: url(../assets/ico-open-right.svg);
-        @apply inline-block absolute h-auto right-4 top-[0.885rem] rotate-0 transition-all;
-    }
-    input[type="checkbox"]:checked + label.ico-faq::after {
-        @apply rotate-90 right-5 top-3;
-    }
-    .tel::before {
-        content: url(../assets/ico-call.svg);
-        @apply mr-2 relative top-0.5;
-    }
-    .mail::before {
-        content: url(../assets/ico-mail.svg);
-        @apply mr-2 relative top-0.5;
-    }
-}
-@layer utilities {
-    .max-width-container {
-        @apply max-w-content mx-auto;
-    }
-    .max-width-blog-container {
-        @apply max-w-article mx-auto;
+        @apply w-full h-auto block absolute bottom-[-0.44rem] left-0 z-2;
     }
 }
 

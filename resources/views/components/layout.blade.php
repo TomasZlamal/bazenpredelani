@@ -34,7 +34,7 @@
                             </div>
                         </div>
                         <!-- Mobile menu button-->
-                        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 bg-black focus:outline-none nav:hidden bg-current" aria-controls="mobile-menu" aria-expanded="false">
+                        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 bg-black focus:outline-hidden nav:hidden bg-current" aria-controls="mobile-menu" aria-expanded="false">
                             <!--
                             Icon when menu is closed.
 
