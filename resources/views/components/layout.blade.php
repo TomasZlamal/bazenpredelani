@@ -4,24 +4,28 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bazén Slovany</title>
-        
+
         <style>
-        
+
         </style>
         @vite('resources/css/app.css')
         @vite('resources/css/styles.css')
         @vite('resources/js/app.js')
-    
+
     </head>
     <body>
         <header>
             <nav aria-label="hlavni-menu" id="nav" class="fixed w-full z-20 py-4 lg:px-12 md:px-8 px-4 transition-all duration-300 translate-y-0 bg-bs-white">
                 <div class="mx-auto max-w-content">
                     <div class="flex h-16 items-center justify-between">
+
+                                <a class="mb-0" href="{{ url('/') }}">
                         <div class="flex items-center">
                             <div class="flex shrink-0 items-center">
-                                <img class="h-16 w-auto" src="/assets/logo-bazen.png" alt="Bazén Slovany" />
+                                    <img class="h-16 w-auto" src="/assets/logo-bazen.png" alt="Bazén Slovany" />
                             </div>
+
+                                </a>
                         </div>
                         <div class="flex items-center justify-center">
                             <div class="hidden nav:ml-6 nav:block">

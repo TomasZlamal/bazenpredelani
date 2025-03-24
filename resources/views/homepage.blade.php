@@ -1,16 +1,6 @@
 <x-layout>
-    <section id="hero" class="section bg-image relative h-[45rem] flex items-center">
-        <div class="max-width-container w-full z-10 relative">
-            <p class="text-bs-yellow font-semibold text-h5 ml-[0.125rem] mb-1">Bazén Slovany</p>
-            <h1 class="text-bs-white">Plavecký areál města Plzně</h1>
-            <p class="text-bs-grey-200 max-w-[45rem] tracking-normal text-[1.05rem]">Bazén Slovany v Plzni je ideálním místem pro relaxaci a sportovní aktivity. Nabízí moderní zázemí s plaveckým bazénem, saunou a vířivkou, což zaručuje zábavu a odpočinek pro všechny věkové kategorie.</p>
-            <div class="flex gap-y-4 items-center mt-8 flex-wrap">
-                <a role="button" class="inline-block text-bs-white hover:text-bs-white active:text-bs-white visited:text-bs-white bg-bs-blue-600 hover:bg-bs-blue-700 active:bg-bs-blue-800 font-normal px-8 py-3 rounded-full no-underline transition-all motion-reduce:transition-none" href="#">Zkontrolovat dostupnost</a>
-                <a class="ml-4 icon-link-arrow font-medium text-bs-grey-300 hover:text-bs-grey-200 active:text-bs-grey-100 visited:text-bs-grey-300" href="#">Více o bazénu</a>
-            </div>
-        </div>
-    </section>
-    <section id="updates">
+    <x-hero-homepage/>
+        <section id="updates">
         <div class="max-width-container">
             <div class="flex gap-4 flex-wrap justify-between items-end mb-6">
                 <div>
@@ -90,7 +80,7 @@
 
             <div class="grid lg:aspect-8/3 lg:grid-cols-10 lg:grid-rows-2 md:grid-cols-5 md:grid-rows-showcase-grid grid-cols-1 sm:grid-rows-1 gap-8 w-full">
                 <figure class="relative rounded-lg overflow-clip lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-2 md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-16/9">
-                    <a href="#" class="group">
+                    <a href="{{ url('/bazen#vnitrni')}}" class="group">
                         <img src="/assets/bazen.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Vnitřní bazén</h3>
@@ -99,7 +89,7 @@
                 </figure>
 
                 <figure class="relative rounded-lg overflow-clip lg:col-start-4 lg:col-end-6 lg:row-start-1 lg:row-end-2 md:col-start-4 md:col-end-6 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-16/9">
-                    <a href="#" class="group">
+                    <a href="{{ url('/bazen#divoka')}}" class="group">
                         <img src="/assets/divoka-reka.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Divoká řeka</h3>
@@ -108,7 +98,7 @@
                 </figure>
 
                 <figure class="relative rounded-lg overflow-clip lg:col-start-6 lg:col-end-8 lg:row-start-1 lg:row-end-3 md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-4 md:aspect-[initial] aspect-16/9">
-                    <a href="#" class="group">
+                    <a href="https://www.plaveckyklubplzen.cz/" class="group">
                         <img src="/assets/plavec.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Plavecká škola a klub Slávia</h3>
@@ -117,7 +107,7 @@
                 </figure>
 
                 <figure class="relative rounded-lg overflow-clip lg:col-start-8 lg:col-end-11 lg:row-start-1 lg:row-end-1 md:col-start-3 md:col-end-6 md:row-start-2 md:row-end-3 md:aspect-[initial] aspect-16/9">
-                    <a href="#" class="group">
+                    <a href="{{ url('/ubytovani')}}" class="group">
                         <img src="/assets/ubytovani.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Ubytování</h3>
@@ -126,7 +116,7 @@
                 </figure>
 
                 <figure class="relative rounded-lg overflow-clip lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 md:col-start-3 md:col-end-6 md:row-start-3 md:row-end-4 md:aspect-[initial] aspect-16/9">
-                    <a href="#" class="group">
+                    <a href="{{ url('/sauna')}}" class="group">
                         <img src="/assets/sauna-para.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Sauna a pára</h3>
@@ -135,7 +125,7 @@
                 </figure>
 
                 <figure class="relative rounded-lg overflow-clip lg:col-start-3 lg:col-end-6 lg:row-start-2 lg:row-end-3 md:col-start-1 md:col-end-4 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-16/9">
-                    <a href="#" class="group">
+                    <a href="{{ url('/bazen#vnitrni')}}" class="group">
                         <img src="/assets/wellness.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Wellness</h3>
@@ -144,7 +134,7 @@
                 </figure>
 
                 <figure class="relative rounded-lg overflow-clip lg:col-start-8 lg:col-end-11 lg:row-start-2 lg:row-end-3 md:col-start-4 md:col-end-6 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-16/9">
-                    <a href="#" class="group">
+                    <a href="https://www.bazenlochotin.cz/" class="group">
                         <img src="/assets/lochotin.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Bazén Lochotín</h3>
@@ -153,7 +143,7 @@
                 </figure>
             </div>
             <div class="flex justify-center">
-                <a class="inline-block md:w-[unset] text-center w-full text-bs-white hover:text-bs-white active:text-bs-white visited:text-bs-white bg-bs-blue-600 hover:bg-bs-blue-700 active:bg-bs-blue-800 font-normal px-20 py-3 rounded-full no-underline transition-all motion-reduce:transition-none" href="#">Objevte možnosti</a>
+                <a class="inline-block md:w-[unset] text-center w-full text-bs-white hover:text-bs-white active:text-bs-white visited:text-bs-white bg-bs-blue-600 hover:bg-bs-blue-700 active:bg-bs-blue-800 font-normal px-20 py-3 rounded-full no-underline transition-all motion-reduce:transition-none" href="{{ url('/bazen')}}">Objevte možnosti</a>
             </div>
         </div>
     </section>
