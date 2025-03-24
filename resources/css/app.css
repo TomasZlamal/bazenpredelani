@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "../views";
 /*@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..700;1,400..700&display=swap");*/
 
 @theme {
@@ -61,9 +62,8 @@
     /* max-width */
     --spacing-content: 68.75rem;
     --spacing-article: 45rem;
-
-
 }
+
 @layer base {
     * {
         font-family: "Plus Jakarta Sans", sans-serif;
@@ -177,16 +177,24 @@
     }
 }
 @layer components {
+
+}
+@layer utilities {
+    .max-width-container {
+        @apply max-w-content mx-auto;
+    }
+    .max-width-blog-container {
+        @apply max-w-article mx-auto;
+    }
+}
+
+
+/*
     .dropdown::after {
-        content: url(../assets/ico-dropdown.svg);
+        content: url(/public/assets/ico-dropdown.svg);
         @apply inline-block w-2.5 pl-2 relative bottom-0.5;
     }
-    .bg-image {
-        background-image: url(../assets/hero.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
+
     #hero::before {
         content: "";
         background: linear-gradient(132.498deg, rgba(19, 19, 19, 72%) 62%, rgba(19, 19, 19, 42%) 89%, rgba(19, 19, 19, 0%) 100%);
@@ -194,7 +202,7 @@
         @apply block absolute top-0 left-0 pointer-events-none w-full h-full z-[1];
     }
     #hero::after {
-        content: url(../assets/wave.svg);
+        content: url(/public/assets/wave.svg);
         width: 100%;
         @apply w-full h-auto block absolute bottom-[-0.44rem] left-0 z-[2];
     }
@@ -211,30 +219,22 @@
         @apply flex content-start;
     }
     .icon-external-link::after {
-        content: url(../assets/ico-link-external.svg);
+        content: url(/public/assets/ico-link-external.svg);
         @apply pl-[0.15rem] leading-[0.75rem] top-0 right-0;
     }
     .icon-faq::after {
-        content: url(../assets/ico-open-right.svg);
+        content: url(/public/assets/ico-open-right.svg);
         @apply inline-block absolute h-auto right-4 top-[0.885rem] rotate-0 transition-all;
     }
     input[type="checkbox"]:checked + label.icon-faq::after {
         @apply rotate-90 right-5 top-3;
     }
     .icon-tel::before {
-        content: url(../assets/ico-call.svg);
+        content: url(/public/assets/ico-call.svg);
         @apply mr-2 relative top-0.5;
     }
     .icon-mail::before {
-        content: url(../assets/ico-mail.svg);
+        content: url(/public/assets/ico-mail.svg);
         @apply mr-2 relative top-0.5;
     }
-}
-@layer utilities {
-    .max-width-container {
-        @apply max-w-content mx-auto;
-    }
-    .max-width-blog-container {
-        @apply max-w-article mx-auto;
-    }
-}
+*/

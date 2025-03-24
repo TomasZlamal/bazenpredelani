@@ -25,7 +25,7 @@
             <div class="grid gap-6 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                 <article class="lg:first:col-span-1 md:first:col-span-2 rounded-lg overflow-hidden shadow-md">
                     <a href="#" class="block overflow-hidden m-0">
-                        <img src="post-img.png" alt="Post image" class="aspect-16/10 w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
+                        <img src="/assets/post-img.png" alt="Post image" class="aspect-16/10 w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
                     </a>
                     <div class="bg-bs-grey-150 px-6 pt-4 pb-6 h-full">
                         <h3 class="mb-2">Zavřeno lol</h3>
@@ -35,7 +35,7 @@
                 </article>
                 <article class="lg:first:col-span-1 md:first:col-span-2 rounded-lg overflow-hidden shadow-md">
                     <a href="#" class="block overflow-hidden m-0">
-                        <img src="post-img.png" alt="Post image" class="aspect-16/10 w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
+                        <img src="/assets/post-img.png" alt="Post image" class="aspect-16/10 w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
                     </a>
                     <div class="bg-bs-grey-150 px-6 pt-4 pb-6 h-full">
                         <h3 class="mb-2">Tohle se aktuálně děje</h3>
@@ -45,7 +45,7 @@
                 </article>
                 <article class="lg:first:col-span-1 md:first:col-span-2 rounded-lg overflow-hidden shadow-md">
                     <a href="#" class="block overflow-hidden m-0">
-                        <img src="plavec.png" alt="Post image" class="aspect-16/10 object-cover w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
+                        <img src="/assets/plavec.png" alt="Post image" class="aspect-16/10 object-cover w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
                     </a>
                     <div class="bg-bs-grey-150 px-6 pt-4 pb-6 h-full">
                         <h3 class="mb-2">Tohle se aktuálně děje</h3>
@@ -91,7 +91,7 @@
             <div class="grid lg:aspect-8/3 lg:grid-cols-10 lg:grid-rows-2 md:grid-cols-5 md:grid-rows-showcase-grid grid-cols-1 sm:grid-rows-1 gap-8 w-full">
                 <figure class="relative rounded-lg overflow-clip lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-2 md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-16/9">
                     <a href="#" class="group">
-                        <img src="bazen.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                        <img src="/assets/bazen.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Vnitřní bazén</h3>
                         </figcaption>
@@ -100,7 +100,7 @@
 
                 <figure class="relative rounded-lg overflow-clip lg:col-start-4 lg:col-end-6 lg:row-start-1 lg:row-end-2 md:col-start-4 md:col-end-6 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-16/9">
                     <a href="#" class="group">
-                        <img src="divoka-reka.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                        <img src="/assets/divoka-reka.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Divoká řeka</h3>
                         </figcaption>
@@ -109,7 +109,7 @@
 
                 <figure class="relative rounded-lg overflow-clip lg:col-start-6 lg:col-end-8 lg:row-start-1 lg:row-end-3 md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-4 md:aspect-[initial] aspect-16/9">
                     <a href="#" class="group">
-                        <img src="plavec.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                        <img src="/assets/plavec.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Plavecká škola a klub Slávia</h3>
                         </figcaption>
@@ -118,7 +118,7 @@
 
                 <figure class="relative rounded-lg overflow-clip lg:col-start-8 lg:col-end-11 lg:row-start-1 lg:row-end-1 md:col-start-3 md:col-end-6 md:row-start-2 md:row-end-3 md:aspect-[initial] aspect-16/9">
                     <a href="#" class="group">
-                        <img src="ubytovani.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                        <img src="/assets/ubytovani.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Ubytování</h3>
                         </figcaption>
@@ -127,7 +127,7 @@
 
                 <figure class="relative rounded-lg overflow-clip lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 md:col-start-3 md:col-end-6 md:row-start-3 md:row-end-4 md:aspect-[initial] aspect-16/9">
                     <a href="#" class="group">
-                        <img src="sauna-para.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                        <img src="/assets/sauna-para.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Sauna a pára</h3>
                         </figcaption>
@@ -136,7 +136,7 @@
 
                 <figure class="relative rounded-lg overflow-clip lg:col-start-3 lg:col-end-6 lg:row-start-2 lg:row-end-3 md:col-start-1 md:col-end-4 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-16/9">
                     <a href="#" class="group">
-                        <img src="wellness.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                        <img src="/assets/wellness.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Wellness</h3>
                         </figcaption>
@@ -145,7 +145,7 @@
 
                 <figure class="relative rounded-lg overflow-clip lg:col-start-8 lg:col-end-11 lg:row-start-2 lg:row-end-3 md:col-start-4 md:col-end-6 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-16/9">
                     <a href="#" class="group">
-                        <img src="lochotin.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                        <img src="/assets/lochotin.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Bazén Lochotín</h3>
                         </figcaption>

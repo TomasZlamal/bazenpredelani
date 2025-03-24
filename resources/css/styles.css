@@ -1,0 +1,85 @@
+.bg-image {
+    background-image: url('/public/assets/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.dropdown::after {
+    content: url(/public/assets/ico-dropdown.svg);
+    display: inline-block;
+    width: 0.625rem;
+    padding-left: 0.5rem;
+    bottom: 0.125rem;
+}
+
+#hero::before {
+    content: "";
+    background: linear-gradient(132.498deg, rgba(19, 19, 19, 72%) 62%, rgba(19, 19, 19, 42%) 89%, rgba(19, 19, 19, 0%) 100%);
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#hero::after {
+    content: url(/public/assets/wave.svg);
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    bottom: -0.44rem;
+    left:0;
+    z-index: 2;
+}
+.icon-link-arrow::after {
+    content: "⟶";
+    text-decoration: none;
+    transition: padding 150ms ease-in-out;
+    display: inline-block;
+    padding-left: 0.25rem;
+}
+.icon-link-arrow:hover::after {
+    padding-left: 0.5rem;
+}
+.icon-external-link {
+    display: flex;
+    align-content: start;
+}
+.icon-external-link::after {
+    content: url(/public/assets/ico-link-external.svg);
+    padding-left: 0.15rem;
+    line-height: 0.75rem;
+    top:0;
+    right: 0;
+}
+.icon-faq::after {
+    content: url(/public/assets/ico-open-right.svg);
+    display: inline-block;
+    position: absolute;
+    height: auto;
+    right: 1rem;
+    top: 0.885rem;
+    transform: rotate(0);
+    transition: all;
+}
+input[type="checkbox"]:checked + label.icon-faq::after {
+    transform: rotate(0.5rad);
+    right: 1.25rem;
+    top: 0.75rem;
+}
+.icon-tel::before {
+    content: url(/public/assets/ico-call.svg);
+    margin-right: 0.5rem;
+    position: relative;
+    top: 0.125rem;
+}
+.icon-mail::before {
+    margin-right: 0.5rem;
+    position: relative;
+    top: 0.125rem;
+    content: url(/public/assets/ico-mail.svg);
+}
