@@ -1,38 +1,90 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import "tailwindcss";
+/*@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..700;1,400..700&display=swap");*/
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+    /* color */
+    --color-bs-white: hsl(0, 0%, 100%);
+    --color-bs-black: hsl(0, 0%, 100%);
+    --color-bs-yellow: hsl(50, 100%, 50%);
 
+    --color-bs-blue-100: hsl(216, 100%, 97.1%);
+    --color-bs-blue-150: hsl(215, 100%, 92%);
+    --color-bs-blue-200: hsl(215, 100%, 87.1%);
+    --color-bs-blue-300: hsl(216, 100%, 77.1%);
+    --color-bs-blue-400: hsl(216, 100%, 67.1%);
+    --color-bs-blue-500: hsl(216, 100%, 57.1%);
+    --color-bs-blue-600: hsl(216, 100%, 47.1%);
+    --color-bs-blue-700: hsl(216, 100%, 36.7%);
+    --color-bs-blue-800: hsl(216, 100%, 27.1%);
+    --color-bs-blue-900: hsl(216, 100%, 17.1%);
+    --color-bs-blue-950: hsl(215, 100%, 12%);
+    --color-bs-blue-1000: hsl(215, 100%, 7.1%);
+
+    --color-bs-grey-150: hsl(0, 0%, 94.9%);
+    --color-bs-grey-200: hsl(0, 0%, 90.2%);
+    --color-bs-grey-300: hsl(0, 0%, 80%);
+    --color-bs-grey-400: hsl(0, 0%, 70.2%);
+    --color-bs-grey-500: hsl(0, 0%, 60%);
+    --color-bs-grey-600: hsl(0, 0%, 50.2%);
+    --color-bs-grey-700: hsl(0, 0%, 40%);
+    --color-bs-grey-800: hsl(0, 0%, 30.2%);
+    --color-bs-grey-900: hsl(0, 0%, 20%);
+    --color-bs-grey-1000: hsl(0, 0%, 10.2%);
+
+    /* font-size */
+    --text-small: 0.875rem;
+    --text-body: 1rem;
+    --text-h5: 1.15rem;
+    --text-h4: 1.3rem;
+    --text-h3: 1.65rem;
+    --text-h2: 2.3rem;
+    --text-h1: 3.75rem;
+    --text-h1-mobile: 2.5rem;
+
+    /* line-height*/
+    --leading-very-tight: 1.05;
+    --leading-120: 120%;
+
+    /* border-radius */
+    --radius-sm: 0.5rem;
+    --radius-lg: 1rem;
+
+    /* breakpoints */
+    --breakpoint-sm: 26rem;
+    --breakpoint-md: 35rem;
+    --breakpoint-lg: 52rem;
+    --breakpoint-nav: 75rem;
+
+    /* grid-template-columns */
+    --grid-rows-showcase-grid: repeat(5, 25vw);
+
+    /* max-width */
+    --spacing-content: 68.75rem;
+    --spacing-article: 45rem;
+
+
+}
 @layer base {
     * {
         font-family: "Plus Jakarta Sans", sans-serif;
         scroll-behavior: smooth;
     }
-    h1,
-    .h1 {
+    h1, .h1 {
         @apply sm:text-h1 text-h1-mobile font-bold text-bs-blue-900 tracking-[-0.12rem] leading-very-tight mb-5;
     }
-    h2,
-    .h2 {
+    h2, .h2 {
         @apply text-h2 font-semibold text-bs-blue-900 tracking-normal leading-snug mb-3 mt-2;
     }
-    h3,
-    .h3 {
+    h3, .h3 {
         @apply text-h3 font-semibold text-bs-blue-900 tracking-normal leading-snug mb-3 mt-2;
     }
-    h4,
-    .h4 {
+    h4, .h4 {
         @apply text-h4 font-semibold text-bs-blue-900 tracking-normal leading-snug mb-1.5 mt-2;
     }
-    h5,
-    .h5 {
+    h5, .h5 {
         @apply text-h5 font-semibold text-bs-blue-900 tracking-[-0.04rem] leading-snug mb-1.5 mt-1.5;
     }
-    p,
-    ul,
-    li,
-    a,
+    p, ul, li, a,
     .p {
         @apply text-body text-bs-grey-900 leading-normal mb-3;
     }
@@ -48,12 +100,10 @@
     ol li {
         @apply list-decimal;
     }
-    small,
-    .small {
+    small, .small {
         @apply text-small text-bs-black;
     }
-    body,
-    html {
+    body, html {
         @apply max-w-full w-[100vw];
     }
     nav li {
@@ -65,8 +115,7 @@
     figcaption {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0%) 54%, rgba(0, 0, 0, 60%) 100%);
     }
-    section,
-    .section {
+    section, .section {
         @apply lg:py-20 md:py-24 py-12 lg:px-12 md:px-8 px-4 max-w-full;
     }
     table {
@@ -75,9 +124,7 @@
     table.first-cell-highlight tr > td:first-of-type {
         @apply font-semibold;
     }
-    tr,
-    th,
-    td {
+    tr, th, td {
         @apply text-center md:py-4 md:px-6 p-3;
     }
     tr:first-of-type th {
@@ -101,11 +148,12 @@
         @apply rounded-lg;
     }
     ::selection {
-        @apply bg-bs-yellow bg-opacity-40;
+        @apply bg-bs-yellow/40;
     }
     address {
         font-style: unset;
     }
+
     footer {
         h2,
         h3,
@@ -150,37 +198,34 @@
         width: 100%;
         @apply w-full h-auto block absolute bottom-[-0.44rem] left-0 z-[2];
     }
-    .ico-link-arrow::after {
+    .icon-link-arrow::after {
         content: "⟶";
-        /* content: "➔"; */
         text-decoration: none;
-        padding-left: 0.25rem;
         transition: padding 150ms ease-in-out;
-        display: inline-block;
+        @apply pl-1 inline-block;
     }
-    .ico-link-arrow:hover::after {
-        padding-left: 0.6rem;
+    .icon-link-arrow:hover::after {
+        @apply pl-2;
     }
-    .ico-link-external {
-        display: flex;
-        align-content: start;
+    .icon-external-link {
+        @apply flex content-start;
     }
-    .ico-link-external::after {
+    .icon-external-link::after {
         content: url(../assets/ico-link-external.svg);
         @apply pl-[0.15rem] leading-[0.75rem] top-0 right-0;
     }
-    .ico-faq::after {
+    .icon-faq::after {
         content: url(../assets/ico-open-right.svg);
         @apply inline-block absolute h-auto right-4 top-[0.885rem] rotate-0 transition-all;
     }
-    input[type="checkbox"]:checked + label.ico-faq::after {
+    input[type="checkbox"]:checked + label.icon-faq::after {
         @apply rotate-90 right-5 top-3;
     }
-    .tel::before {
+    .icon-tel::before {
         content: url(../assets/ico-call.svg);
         @apply mr-2 relative top-0.5;
     }
-    .mail::before {
+    .icon-mail::before {
         content: url(../assets/ico-mail.svg);
         @apply mr-2 relative top-0.5;
     }

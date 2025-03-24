@@ -6,7 +6,7 @@
             <p class="text-bs-grey-200 max-w-[45rem] tracking-normal text-[1.05rem]">Bazén Slovany v Plzni je ideálním místem pro relaxaci a sportovní aktivity. Nabízí moderní zázemí s plaveckým bazénem, saunou a vířivkou, což zaručuje zábavu a odpočinek pro všechny věkové kategorie.</p>
             <div class="flex gap-y-4 items-center mt-8 flex-wrap">
                 <a role="button" class="inline-block text-bs-white hover:text-bs-white active:text-bs-white visited:text-bs-white bg-bs-blue-600 hover:bg-bs-blue-700 active:bg-bs-blue-800 font-normal px-8 py-3 rounded-full no-underline transition-all motion-reduce:transition-none" href="#">Zkontrolovat dostupnost</a>
-                <a class="ml-4 ico-link-arrow font-medium text-bs-grey-300 hover:text-bs-grey-200 active:text-bs-grey-100 visited:text-bs-grey-300" href="#">Více o bazénu</a>
+                <a class="ml-4 icon-link-arrow font-medium text-bs-grey-300 hover:text-bs-grey-200 active:text-bs-grey-100 visited:text-bs-grey-300" href="#">Více o bazénu</a>
             </div>
         </div>
     </section>
@@ -30,7 +30,7 @@
                     <div class="bg-bs-grey-150 px-6 pt-4 pb-6 h-full">
                         <h3 class="mb-2">Zavřeno lol</h3>
                         <p>Bazén Slovany s potěšením oznamuje otevření nového venkovního areálu. Návštěvníci se mohou těšit na moderní plavecké dráhy, relaxační zóny a různé vodní atrakce, které zajistí zábavu pro celou rodinu. Přijďte si užít letní pohodu v novém prostředí!</p>
-                        <a class="ico-link-arrow inline-block text-bs-blue-700 hover:text-bs-blue-800 visited:text-bs-blue-800 active:text-bs-blue-800 hover:underline font-medium mt-3 motion-reduce:transition-none" href="#">Zjistěte více</a>
+                        <a class="icon-link-arrow inline-block text-bs-blue-700 hover:text-bs-blue-800 visited:text-bs-blue-800 active:text-bs-blue-800 hover:underline font-medium mt-3 motion-reduce:transition-none" href="#">Zjistěte více</a>
                     </div>
                 </article>
                 <article class="lg:first:col-span-1 md:first:col-span-2 rounded-lg overflow-hidden shadow-md">
@@ -40,7 +40,7 @@
                     <div class="bg-bs-grey-150 px-6 pt-4 pb-6 h-full">
                         <h3 class="mb-2">Tohle se aktuálně děje</h3>
                         <p>Bazén Slovany s potěšením oznamuje otevření nového venkovního areálu. Návštěvníci se mohou těšit Návštěvníci se mohou těšit Návštěvníci se mohou těšit na moderní plavecké dráhy, relaxační zóny a různé vodní atrakce, které zajistí zábavu pro celou rodinu. Přijďte si užít letní pohodu v novém prostředí!</p>
-                        <a class="ico-link-arrow inline-block text-bs-blue-700 hover:text-bs-blue-800 visited:text-bs-blue-800 active:text-bs-blue-800 hover:underline font-medium mt-3 motion-reduce:transition-none" href="#">Zjistěte více</a>
+                        <a class="icon-link-arrow inline-block text-bs-blue-700 hover:text-bs-blue-800 visited:text-bs-blue-800 active:text-bs-blue-800 hover:underline font-medium mt-3 motion-reduce:transition-none" href="#">Zjistěte více</a>
                     </div>
                 </article>
                 <article class="lg:first:col-span-1 md:first:col-span-2 rounded-lg overflow-hidden shadow-md">
@@ -50,7 +50,7 @@
                     <div class="bg-bs-grey-150 px-6 pt-4 pb-6 h-full">
                         <h3 class="mb-2">Tohle se aktuálně děje</h3>
                         <p>Bazén Slovany s potěšením oznamuje otevření nového venkovního areálu.</p>
-                        <a class="ico-link-arrow inline-block text-bs-blue-700 hover:text-bs-blue-800 visited:text-bs-blue-800 active:text-bs-blue-800 hover:underline font-medium mt-3 motion-reduce:transition-none" href="#">Zjistěte více</a>
+                        <a class="icon-link-arrow inline-block text-bs-blue-700 hover:text-bs-blue-800 visited:text-bs-blue-800 active:text-bs-blue-800 hover:underline font-medium mt-3 motion-reduce:transition-none" href="#">Zjistěte více</a>
                     </div>
                 </article>
             </div>
@@ -65,14 +65,14 @@
             <div class="lg:col-span-3 col-span-full w-full">
                 <div class="mb-4 last-of-type:mb-0 rounded-lg shadow-xs">
                     <input type="checkbox" id="faq1" class="peer hidden" />
-                    <label role="button" for="faq1" class="ico-faq block relative cursor-pointer font-medium text-bs-blue-900 bg-bs-blue-200 bg-opacity-45 py-4 px-4 peer-checked:rounded-t-lg peer-checked:rounded-b-none rounded-lg peer-checked:border-b-bs-blue-200 peer-checked:border-b-2"> Jaká je teplota vody v bazénech? </label>
+                    <label role="button" for="faq1" class="icon-faq block relative cursor-pointer font-medium text-bs-blue-900 bg-bs-blue-200 bg-opacity-45 py-4 px-4 peer-checked:rounded-t-lg peer-checked:rounded-b-none rounded-lg peer-checked:border-b-bs-blue-200 peer-checked:border-b-2"> Jaká je teplota vody v bazénech? </label>
                     <div class="p-4 hidden peer-checked:block bg-bs-blue-200 bg-opacity-30 rounded-b-lg">
                         <p class="text-bs-blue-950">Velký vnitřní bazén je vytápěný na 27˚C, malý bazén na 29˚C. Venkovní bazén se pohybuje kolem 24 - 26˚C, dle počasí.</p>
                     </div>
                 </div>
                 <div class="mb-4 last-of-type:mb-0 rounded-lg shadow-xs">
                     <input type="checkbox" id="faq2" class="peer hidden" />
-                    <label role="button" for="faq2" class="ico-faq block relative cursor-pointer font-medium text-bs-blue-900 bg-bs-blue-200 bg-opacity-45 py-4 px-4 peer-checked:rounded-t-lg peer-checked:rounded-b-none rounded-lg peer-checked:border-b-bs-blue-200 peer-checked:border-b-2"> Je bazén momentálně otevřený? </label>
+                    <label role="button" for="faq2" class="icon-faq block relative cursor-pointer font-medium text-bs-blue-900 bg-bs-blue-200 bg-opacity-45 py-4 px-4 peer-checked:rounded-t-lg peer-checked:rounded-b-none rounded-lg peer-checked:border-b-bs-blue-200 peer-checked:border-b-2"> Je bazén momentálně otevřený? </label>
                     <div class="p-4 hidden peer-checked:block bg-bs-blue-200 bg-opacity-30 rounded-b-lg">
                         <p class="text-bs-blue-950">Naše otevírací doba je 8:00 - 22:00 každý den. O svátcích nebo jiných událostech se však může lišit, a proto raději zkontrolujte dostupnost.</p>
                     </div>

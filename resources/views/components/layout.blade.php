@@ -143,7 +143,7 @@
                             <li>
                                 <ul class="flex flex-col gap-2">
                                     <li><b class="font-bold text-bs-grey-300">Heading</b></li>
-                                    <li><a href="#" class="ico-link-external">Hyperlink</a></li>
+                                    <li><a href="#" class="icon-external-link">Hyperlink</a></li>
                                     <li><a href="#">Hyperlink</a></li>
                                     <li><a href="#">Hyperlink</a></li>
                                 </ul>
