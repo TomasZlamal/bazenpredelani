@@ -82,7 +82,7 @@
                 </div>
             </nav>
         </header>
-        <main>
+        <main >
             {{ $slot }}
         </main>
         <footer class="section bg-bs-blue-1000">

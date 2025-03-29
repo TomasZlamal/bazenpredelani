@@ -175,6 +175,19 @@
             @apply text-bs-grey-300 hover:text-bs-grey-150 active:text-bs-grey-400 visited:text-bs-grey-300 no-underline font-normal mb-0;
         }
     }
+    .sluzba {
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        width: fit-content;
+        min-width: 300px;
+        height: fit-content;
+    }
+    .cenik-element:nth-child(even) {
+        background-color: var(--color-bs-blue-200);
+    }
+    .cenik-element h2 {
+        text-align: center
+    }
 }
 @layer components {
 

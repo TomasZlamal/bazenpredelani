@@ -1,6 +1,7 @@
 ## Todo
-- [ ] Ostatní služby
-- [ ] Ceník
+- [x] Ostatní služby
+- [x] Ceník
+- [ ] Ubytovani Stránka
 - [ ] Horizontal element for: Sauna; Bazenový svět; ubytování
-- [ ] Dodělat O nás stránku na endpointu /kontakty
-- [ ] 
+- [ ] O nás stránku na endpointu /kontakty
+- [ ] Stránka pro 1 článek
