@@ -15,15 +15,13 @@
             <nav aria-label="hlavni-menu" id="nav" class="fixed w-full z-20 py-4 lg:px-12 md:px-8 px-4 transition-all duration-300 translate-y-0 bg-bs-white">
                 <div class="mx-auto max-w-content">
                     <div class="flex h-16 items-center justify-between">
-
-                                <a class="mb-0" href="{{ url('/') }}">
-                        <div class="flex items-center">
-                            <div class="flex shrink-0 items-center">
-                                    <img class="h-16 w-auto" src="/assets/logo-bazen.png" alt="Bazén Slovany" />
+                        <a class="mb-0" href="{{ url('/') }}">
+                            <div class="flex items-center">
+                                <div class="flex shrink-0 items-center">
+                                        <img class="h-16 w-auto" src="/assets/logo-bazen.png" alt="Bazén Slovany" />
+                                </div>
                             </div>
-
-                                </a>
-                        </div>
+                        </a>
                         <div class="flex items-center justify-center">
                             <div class="hidden nav:ml-6 nav:block">
                                 <div class="flex space-x-4">
@@ -120,52 +118,51 @@
                         </address>
                     </div>
                 </div>
-                <!-- Tady je předpřipravená CSS třída ico-link-external, která by měla být automaticky daná na plný
-                 URI který není bazén, tzn. https://bazenslovany.cz/... BEZ, /blog/post BEZ, https://youtube.com PŘIDAT TŘÍDU -->
+  
                 <nav aria-label="menu-zápatí">
                     <ul class="flex flex-row flex-wrap gap-16">
                         <li>
                             <ul class="flex flex-col gap-2">
-                                <li><b class="font-bold text-bs-grey-300">Heading</b></li>
-                                <li><a href="#">Hyperlink</a></li>
-                                <li><a href="#">Hyperlink</a></li>
-                                <li><a href="#">Hyperlink</a></li>
+                                <x-footer.heading>Heading</x-footer.heading>
+                                <x-footer.link href="/sluzby">Sluzby</x-footer.link>
+                                <x-footer.link href="https://youtube.com">External</x-footer.link>
+                                <x-footer.link href="#">Hyperlink</x-footer.link>
+                                <x-footer.link href="#">Hyperlink</x-footer.link>
                             </ul>
                         </li>
                         <li>
                             <ul class="flex flex-col gap-2">
-                                <li><b class="font-bold text-bs-grey-300">Heading</b></li>
-                                <li><a href="#">Hyperlink</a></li>
-                                <li><a href="#">Hyperlink</a></li>
-                                <li><a href="#">Hyperlink</a></li>
+                                <x-footer.heading>Heading</x-footer.heading>
+                                <x-footer.link href="/sluzby">Sluzby</x-footer.link>
+                                <x-footer.link href="#">Hyperlink</x-footer.link>
+                                <x-footer.link href="#">Hyperlink</x-footer.link>
                             </ul>
                         </li>
                         <li>
                             <ul class="flex flex-col gap-2">
-                                <li><b class="font-bold text-bs-grey-300">Heading</b></li>
-                                <li><a href="#">Hyperlink</a></li>
-                                <li><a href="#">Hyperlink</a></li>
-                                <li><a href="#">Hyperlink</a></li>
+                                <x-footer.heading>Heading</x-footer.heading>
+                                <x-footer.link href="#">Hyperlink</x-footer.link>
+                                <x-footer.link href="#">Hyperlink</x-footer.link>
+                                <x-footer.link href="#">Hyperlink</x-footer.link>
+                                <x-footer.link href="#">Hyperlink</x-footer.link>
                             </ul>
                         </li>
                         <li>
                             <ul class="flex flex-col gap-2">
-                                <li><b class="font-bold text-bs-grey-300">Heading</b></li>
-                                <li><a href="#" class="icon-external-link">Hyperlink</a></li>
-                                <li><a href="#">Hyperlink</a></li>
-                                <li><a href="#">Hyperlink</a></li>
+                                <x-footer.heading>Heading</x-footer.heading>
+                                <x-footer.link href="http://youtube.com">External</x-footer.link>
+                                <x-footer.link href="#">Hyperlink</x-footer.link>
+                                <x-footer.link href="#">Hyperlink</x-footer.link>
                             </ul>
                         </li>
                     </ul>
                 </nav>
                 <div class="flex flex-wrap w-full justify-between gap-x-16 gap-y-1">
                     <p class="text-bs-grey-500">
-                        &copy; Bazén Slovany,
-                        <?= date('Y') || 2024 ?>
-                        Všechna práva vyhrazena.
+                        &copy; Bazén Slovany, {{date('Y')}}. Všechna práva vyhrazena.
                     </p>
                     <p class="text-bs-grey-500">
-                        Vytvořili
+                        Vytvořil
                         <a class="underline text-bs-grey-500 visited:text-bs-grey-500" href="https://www.skoula.com">Michal Škoula</a>
                         a
                         <a class="underline text-bs-grey-500 visited:text-bs-grey-500" href="https://www.zlamal.tech">Tomáš Zlámal</a>.
