@@ -77,7 +77,7 @@
                 </figure>
 
                 <figure class="relative rounded-lg overflow-clip lg:col-start-4 lg:col-end-6 lg:row-start-1 lg:row-end-2 md:col-start-4 md:col-end-6 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-16/9">
-                    <a href="{{ url('/bazen#divoka')}}" class="group">
+                    <a href="{{ url('/bazen#orinoko')}}" class="group">
                         <img src="/assets/divoka-reka.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                         <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
                             <h3 class="text-h4 m-0 font-semibold text-white">Divoká řeka</h3>
@@ -131,9 +131,8 @@
                 </figure>
             </div>
             <div class="flex justify-center">
-                <a class="inline-block md:w-[unset] text-center w-full text-bs-white hover:text-bs-white active:text-bs-white visited:text-bs-white bg-bs-blue-600 hover:bg-bs-blue-700 active:bg-bs-blue-800 font-normal px-20 py-3 rounded-full no-underline transition-all motion-reduce:transition-none" href="{{ url('/bazen')}}">Objevte možnosti</a>
+                <x-href-button :href="route('bazen')" class="px-20 max-w-full">Objevte možnosti</x-href-button>
             </div>
         </div>
     </section>
-
 </x-layouts.app>

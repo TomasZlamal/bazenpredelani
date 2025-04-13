@@ -36,7 +36,7 @@
     z-index: 2;
 }
 .icon-link-arrow::after {
-    content: "⟶";
+    content: "→";
     text-decoration: none;
     transition: padding 150ms ease-in-out;
     display: inline-block;
