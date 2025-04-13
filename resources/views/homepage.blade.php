@@ -1,4 +1,4 @@
-<x-layout>
+<x-layouts.app title="Domů">
     <x-hero-homepage/>
         <section id="updates">
         <div class="max-width-container">
@@ -136,4 +136,4 @@
         </div>
     </section>
 
-</x-layout>
+</x-layouts.app>

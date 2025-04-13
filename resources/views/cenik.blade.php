@@ -1,4 +1,4 @@
-<x-layout>
+<x-layouts.app title="Ceník">
     <x-hero image="bazen.png" motto="Ceník"/>
     <section class="flex flex-col justify-center p-0 mt-12">
         <x-cenik.price-element title="Vstupné do plaveckého areálu">
@@ -56,4 +56,4 @@ Za ztrátu jakéhokoliv čipového náramku či karty je účtován poplatek 200
 V případě opětovného nálezu čipového náramku či karty v době pobytu nebo nouzového otevření skříňky je účtován pouze manipulační poplatek 100,- Kč.</p>
         </div>
     </section>
-</x-layout>
+</x-layouts.app>

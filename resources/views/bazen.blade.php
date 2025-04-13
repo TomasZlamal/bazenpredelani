@@ -1,3 +1,3 @@
-<x-layout>
+<x-layouts.app title="Bazénový svět">
     <x-hero image="bazen.png" motto="Bazénový svět"/>
-</x-layout>
+</x-layouts.app>
