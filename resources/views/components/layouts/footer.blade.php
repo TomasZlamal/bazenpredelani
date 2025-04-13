@@ -1,7 +1,7 @@
 <footer class="section bg-bs-blue-1000">
     <div class="max-width-container flex flex-wrap gap-16">
         <div class="flex flex-row flex-wrap gap-2 items-center">
-            <h4>Bazén Slovany |</h4>
+            <p class="h4 text-white">Bazén Slovany |</p>
             <p class="mt-[0.17rem]">Největší plavecký areál v Plzeňském kraji.</p>
         </div>
         
