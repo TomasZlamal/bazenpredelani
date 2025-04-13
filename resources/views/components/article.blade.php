@@ -1,6 +1,6 @@
 <article class="lg:first:col-span-1 md:first:col-span-2 rounded-lg overflow-hidden shadow-md flex-col">
-    <a href="{{$url}}" class="block overflow-hidden m-0">
-        <img src="{{$imgUrl}}" alt="{{$imgAltText}}" class="aspect-16/10 w-full scale-[1.01] hover:scale-105 transition-transform rounded-none" />
+    <a href="{{url($url)}}" class="block overflow-hidden m-0">
+        <img src="{{url($imgUrl)}}" alt="{{$imgAltText}}" class="aspect-16/10 w-full scale-[1.01] hover:scale-105 transition-transform rounded-none" />
     </a>
     <div class="bg-bs-grey-150 px-6 pt-4 pb-6 h-full">
         <h3 class="mb-2">{{$title}}</h3>

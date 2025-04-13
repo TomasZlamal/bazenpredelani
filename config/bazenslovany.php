@@ -1,14 +1,19 @@
 <?php
 
 return [
-	// Site
-	'logo_url' => '/assets/logo-bazen.png',
-	'logo_alt' => 'Bazén Slovany',
+	'logo' => [
+		'url' => '/assets/logo-bazen.png',
+		'alt' => 'Bazén Slovany',
+	],
 
-	'title_suffix' => 'Bazén Slovany',
-	'title_separator' => '|',
+	'site_title' => [
+		'suffix' => 'Bazén Slovany',
+		'separator' => '|',
+	],
 
-	// Articles
-	'default_img_url' => '/assets/hero.webp',
-	'default_img_alt' => 'Bazén Slovany'
+	'article' => [
+		'default_img_url' => '/assets/hero.webp',
+		'default_img_alt' => 'Bazén Slovany'
+	],
+
 ];

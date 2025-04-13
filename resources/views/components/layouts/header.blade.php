@@ -5,7 +5,7 @@
                 <a class="mb-0" href="{{ url('/') }}">
                     <div class="flex items-center">
                         <div class="flex shrink-0 items-center">
-                            <img class="h-16 w-auto" src="{{config('bazenslovany.logo_url')}}" alt="{{config('bazenslovany.logo_alt')}}" />
+                            <img class="h-16 w-auto" src="{{config('bazenslovany.logo.url')}}" alt="{{config('bazenslovany.logo.alt')}}" />
                         </div>
                     </div>
                 </a>
@@ -13,14 +13,15 @@
                     <div class="hidden nav:ml-6 nav:block">
                         <div class="flex space-x-4">
                             <ul class="flex justify-between gap-8 mb-0">
-                                <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="dostupnost">Dostupnost</a></li>
-                                <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="../bazen">Bazénový svět</a></li>
-                                <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="sauna">Sauna a pára</a></li>
-                                <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="https://www.plaveckyklubplzen.cz/">Plavecký klub</a></li>
-                                <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="https://www.plaveckaskolaplzen.cz/plavecka-skola-plzen-slovany/">Plavecká škola</a></li>
-                                <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="../cenik">Ceník</a></li>
-                                <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="ubytovani">Ubytování</a></li>
-                                <li class="list-none"><a class="nav-item no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="ostatnisluzby">Ostatní služby</a></li>
+                                <x-header-link-desktop href="{{ route('dostupnost') }}">Dostupnost</x-header-link-desktop>
+                                <x-header-link-desktop href="{{ route('bazen') }}">Bazénový svět</x-header-link-desktop>
+                                <x-header-link-desktop href="{{ route('wellness') }}">Wellness</x-header-link-desktop>
+                                <x-header-link-desktop href="{{ 'https://www.plaveckyklubplzen.cz/'}}">Plavecký klub</x-header-link-desktop>
+                                <x-header-link-desktop href="{{ 'https://www.plaveckaskolaplzen.cz/plavecka-skola-plzen-slovany/' }}">Plavecká škola</x-header-link-desktop>
+                                <x-header-link-desktop href="{{ route('cenik') }}">Ceník</x-header-link-desktop>
+                                <x-header-link-desktop href="{{ route('ubytovani') }}">Ubytování</x-header-link-desktop>
+                                <x-header-link-desktop href="{{ route('sluzby') }}">Ostatní služby</x-header-link-desktop>
+                            
                             </ul>
                         </div>
                     </div>
@@ -51,14 +52,14 @@
         <div class="nav:hidden hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pb-3 pt-6">
                 <ul class="flex flex-col gap-6 mb-0">
-                    <li class="list-none"><a class="no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Dostupnost</a></li>
-                    <li class="list-none"><a class="no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Bazénový svět</a></li>
-                    <li class="list-none"><a class="no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Sauna a pára</a></li>
-                    <li class="list-none"><a class="no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Plavecký klub</a></li>
-                    <li class="list-none"><a class="no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Plavecká škola</a></li>
-                    <li class="list-none"><a class="no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Ceník</a></li>
-                    <li class="list-none"><a class="no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Ubytování</a></li>
-                    <li class="list-none"><a class="no-underline hover:underline list-none text-bs-black hover:text-bs-grey-900 active:text-bs-grey-800 visited:text-black font-normal" href="#">Ostatní služby</a></li>
+                    <x-header-link-mobile href="{{ route('dostupnost') }}">Dostupnost</x-header-link-mobile>
+                    <x-header-link-mobile href="{{ route('bazen') }}">Bazénový svět</x-header-link-mobile>
+                    <x-header-link-mobile href="{{ route('wellness') }}">Wellness</x-header-link-mobile>
+                    <x-header-link-mobile href="https://www.plaveckyklubplzen.cz/">Plavecký klub</x-header-link-mobile>
+                    <x-header-link-mobile href="https://www.plaveckaskolaplzen.cz/plavecka-skola-plzen-slovany/">Plavecká škola</x-header-link-mobile>
+                    <x-header-link-mobile href="{{ route('cenik') }}">Ceník</x-header-link-mobile>
+                    <x-header-link-mobile href="{{ route('ubytovani') }}">Ubytování</x-header-link-mobile>
+                    <x-header-link-mobile href="{{ route('sluzby') }}">Ostatní služby</x-header-link-mobile>
                 </ul>
             </div>
         </div>

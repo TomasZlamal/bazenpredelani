@@ -2,10 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'homepage');
-Route::view('/dostupnost', 'dostupnost');
-Route::view('/bazen', 'bazen');
-Route::view('/wellness', 'wellness');
-Route::view('/cenik', 'cenik');
-Route::view('/ubytovani', 'ubytovani');
-Route::view('/sluzby', 'sluzby');
+Route::view('/', 'homepage')->name('index');
+Route::view('/dostupnost', 'dostupnost')->name('dostupnost');
+Route::view('/bazen', 'bazen')->name('bazen');
+Route::view('/wellness', 'wellness')->name('wellness');
+Route::view('/cenik', 'cenik')->name('cenik');
+Route::view('/ubytovani', 'ubytovani')->name('ubytovani');
+Route::view('/sluzby', 'sluzby')->name('sluzby');

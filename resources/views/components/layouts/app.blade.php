@@ -8,8 +8,8 @@
 	    $fullTitle = config('bazenslovany.title_suffix');
     }
 	else {
-		$suffix = config('bazenslovany.title_suffix');
-		$separator = config('bazenslovany.title_separator');
+		$suffix = config('bazenslovany.site_title.suffix');
+		$separator = config('bazenslovany.site_title.separator');
 		$fullTitle = "$title $separator $suffix";
 	}
 @endphp

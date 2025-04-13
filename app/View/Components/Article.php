@@ -16,8 +16,8 @@ class Article extends Component
 		public string $imgUrl = '',
 		public string $imgAltText = '',
 	) {
-		$this->imgUrl = $imgUrl ?: config('bazenslovany.default_img_url');
-		$this->imgAltText = $imgAltText ?: config('bazenslovany.default_img_alt');
+		$this->imgUrl = $imgUrl ?: config('bazenslovany.article.default_img_url');
+		$this->imgAltText = $imgAltText ?: config('bazenslovany.article.default_img_alt');
 	}
 
     /**
