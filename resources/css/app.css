@@ -6,7 +6,7 @@
 @theme {
     /* color */
     --color-bs-white: hsl(0, 0%, 100%);
-    --color-bs-black: hsl(0, 0%, 100%);
+    --color-bs-black: hsl(0, 6%, 0%);
     --color-bs-yellow: hsl(50, 100%, 50%);
 
     --color-bs-blue-100: hsl(216, 100%, 97.1%);

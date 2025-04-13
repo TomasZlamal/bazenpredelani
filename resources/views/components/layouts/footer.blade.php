@@ -38,7 +38,7 @@
         </div>
         
         <nav aria-label="menu-zápatí">
-            <ul class="flex flex-row flex-wrap gap-16">
+            <ul class="flex flex-row flex-wrap md:gap-24 gap-10 gap-y-6">
                 <li>
                     <ul class="flex flex-col gap-2">
                         <x-footer.heading>Heading</x-footer.heading>
@@ -80,9 +80,8 @@
                 &copy; Bazén Slovany, {{date('Y')}}. Všechna práva vyhrazena.
             </p>
             <p class="text-bs-grey-500">
-                Vytvořil
-                <a class="underline text-bs-grey-500 visited:text-bs-grey-500" href="https://www.skoula.com">Michal Škoula</a>
-                a
+                Vytvořili
+                <a class="underline text-bs-grey-500 visited:text-bs-grey-500" href="https://www.skoula.com">Michal Škoula</a>,
                 <a class="underline text-bs-grey-500 visited:text-bs-grey-500" href="https://www.zlamal.tech">Tomáš Zlámal</a>.
             </p>
         </div>

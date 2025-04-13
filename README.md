@@ -9,5 +9,5 @@
 
 - [ ] Předělat zbylý komponenty (aside, blockquote...) do blade komponentů
 - [ ] Dodělat obsah do sekcí - jen překopírovat, pošleme k revizi
-- [ ] Opravit header barvy
-- [ ] Opravit CTA transform na šipkách
+- [x] Opravit header barvy
+- [ ] Opravit FAQ transform na šipkách
