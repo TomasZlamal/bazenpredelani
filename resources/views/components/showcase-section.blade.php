@@ -4,7 +4,7 @@
         <div>
             <h2>{{$heading}}</h2>
             <p>{{$description}}</p>
-            <div class="sm:flex sm:flex-wrap grid grid-cols-2 gap-4 mt-6">
+            <div class="grid md:grid-cols-3 grid-cols-2 gap-4 mt-6">
                 {{$slot}}
             </div>
         </div>
