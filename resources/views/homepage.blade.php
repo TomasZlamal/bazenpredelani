@@ -41,20 +41,18 @@
                 <p>Máte otázky? Zavolejte nám na recepci a rádi vám poradíme.</p>
             </div>
             <div class="lg:col-span-3 col-span-full w-full">
-                <div class="mb-4 last-of-type:mb-0 rounded-lg shadow-xs">
-                    <input type="checkbox" id="faq1" class="peer hidden" />
-                    <label role="button" for="faq1" class="icon-faq block relative cursor-pointer font-medium text-bs-blue-900 bg-bs-blue-200 bg-opacity-45 py-4 px-4 peer-checked:rounded-t-lg peer-checked:rounded-b-none rounded-lg peer-checked:border-b-bs-blue-200 peer-checked:border-b-2"> Jaká je teplota vody v bazénech? </label>
-                    <div class="p-4 hidden peer-checked:block bg-bs-blue-200 bg-opacity-30 rounded-b-lg">
-                        <p class="text-bs-blue-950">Velký vnitřní bazén je vytápěný na 27˚C, malý bazén na 29˚C. Venkovní bazén se pohybuje kolem 24 - 26˚C, dle počasí.</p>
-                    </div>
-                </div>
-                <div class="mb-4 last-of-type:mb-0 rounded-lg shadow-xs">
-                    <input type="checkbox" id="faq2" class="peer hidden" />
-                    <label role="button" for="faq2" class="icon-faq block relative cursor-pointer font-medium text-bs-blue-900 bg-bs-blue-200 bg-opacity-45 py-4 px-4 peer-checked:rounded-t-lg peer-checked:rounded-b-none rounded-lg peer-checked:border-b-bs-blue-200 peer-checked:border-b-2"> Je bazén momentálně otevřený? </label>
-                    <div class="p-4 hidden peer-checked:block bg-bs-blue-200 bg-opacity-30 rounded-b-lg">
-                        <p class="text-bs-blue-950">Naše otevírací doba je 8:00 - 22:00 každý den. O svátcích nebo jiných událostech se však může lišit, a proto raději zkontrolujte dostupnost.</p>
-                    </div>
-                </div>
+                <x-faq-card
+                    question="Jaká je teplota vody v bazénu?"
+                    answer="Ne moc dlouhá odpověď"
+                />
+                <x-faq-card
+                    question="Je možné u bazénu parkovat?"
+                    answer="Ne moc dlouhá odpověď"
+                />
+                <x-faq-card
+                    question="Jaká je teplota vody v bazénu?"
+                    answer="Ne moc dlouhá odpověď"
+                />
             </div>
         </div>
     </section>
@@ -65,70 +63,56 @@
                 <h2 class="text-center mb-0">Co u nás najdete?</h2>
                 <p class="text-center">Podívejte se, co všechno můžete zažít u nás v areálu.</p>
             </div>
-
+            
             <div class="grid lg:aspect-8/3 lg:grid-cols-10 lg:grid-rows-2 md:grid-cols-5 md:grid-rows-showcase-grid grid-cols-1 sm:grid-rows-1 gap-8 w-full">
-                <figure class="relative rounded-lg overflow-clip lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-2 md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-16/9">
-                    <a href="{{ url('/bazen#vnitrni')}}" class="group">
-                        <img src="/assets/bazen.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                        <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
-                            <h3 class="text-h4 m-0 font-semibold text-white">Vnitřní bazén</h3>
-                        </figcaption>
-                    </a>
-                </figure>
-
-                <figure class="relative rounded-lg overflow-clip lg:col-start-4 lg:col-end-6 lg:row-start-1 lg:row-end-2 md:col-start-4 md:col-end-6 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-16/9">
-                    <a href="{{ url('/bazen#orinoko')}}" class="group">
-                        <img src="/assets/divoka-reka.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                        <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
-                            <h3 class="text-h4 m-0 font-semibold text-white">Divoká řeka</h3>
-                        </figcaption>
-                    </a>
-                </figure>
-
-                <figure class="relative rounded-lg overflow-clip lg:col-start-6 lg:col-end-8 lg:row-start-1 lg:row-end-3 md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-4 md:aspect-[initial] aspect-16/9">
-                    <a href="https://www.plaveckyklubplzen.cz/" class="group">
-                        <img src="/assets/plavec.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                        <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
-                            <h3 class="text-h4 m-0 font-semibold text-white">Plavecká škola a klub Slávia</h3>
-                        </figcaption>
-                    </a>
-                </figure>
-
-                <figure class="relative rounded-lg overflow-clip lg:col-start-8 lg:col-end-11 lg:row-start-1 lg:row-end-1 md:col-start-3 md:col-end-6 md:row-start-2 md:row-end-3 md:aspect-[initial] aspect-16/9">
-                    <a href="{{ url('/ubytovani')}}" class="group">
-                        <img src="/assets/ubytovani.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                        <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
-                            <h3 class="text-h4 m-0 font-semibold text-white">Ubytování</h3>
-                        </figcaption>
-                    </a>
-                </figure>
-
-                <figure class="relative rounded-lg overflow-clip lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 md:col-start-3 md:col-end-6 md:row-start-3 md:row-end-4 md:aspect-[initial] aspect-16/9">
-                    <a href="{{ url('/sauna')}}" class="group">
-                        <img src="/assets/sauna-para.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                        <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
-                            <h3 class="text-h4 m-0 font-semibold text-white">Sauna a pára</h3>
-                        </figcaption>
-                    </a>
-                </figure>
-
-                <figure class="relative rounded-lg overflow-clip lg:col-start-3 lg:col-end-6 lg:row-start-2 lg:row-end-3 md:col-start-1 md:col-end-4 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-16/9">
-                    <a href="{{ url('/bazen#vnitrni')}}" class="group">
-                        <img src="/assets/wellness.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                        <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
-                            <h3 class="text-h4 m-0 font-semibold text-white">Wellness</h3>
-                        </figcaption>
-                    </a>
-                </figure>
-
-                <figure class="relative rounded-lg overflow-clip lg:col-start-8 lg:col-end-11 lg:row-start-2 lg:row-end-3 md:col-start-4 md:col-end-6 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-16/9">
-                    <a href="https://www.bazenlochotin.cz/" class="group">
-                        <img src="/assets/lochotin.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                        <figcaption class="absolute flex items-end justify-center h-full bottom-0 left-0 w-full text-center p-3">
-                            <h3 class="text-h4 m-0 font-semibold text-white">Bazén Lochotín</h3>
-                        </figcaption>
-                    </a>
-                </figure>
+                <x-discover-bento-card
+                    class="lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-2 md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-16/9"
+                    href="/bazen#vnitrni"
+                    :img-url="asset('assets/bazen.png')"
+                    caption="Vnitřní bazén"
+                />
+                
+                <x-discover-bento-card
+                    class="lg:col-start-4 lg:col-end-6 lg:row-start-1 lg:row-end-2 md:col-start-4 md:col-end-6 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-16/9"
+                    href="bazen#orinoko"
+                    :img-url="asset('assets/divoka-reka.png')"
+                    caption="Divoká řeka"
+                />
+                
+                <x-discover-bento-card
+                    class="lg:col-start-6 lg:col-end-8 lg:row-start-1 lg:row-end-3 md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-4 md:aspect-[initial] aspect-16/9"
+                    href="https://www.plaveckyklubplzen.cz/"
+                    :img-url="asset('assets/plavec.png')"
+                    caption="Plavecká škola a klub Slávia"
+                />
+                
+                <x-discover-bento-card
+                    class="lg:col-start-8 lg:col-end-11 lg:row-start-1 lg:row-end-1 md:col-start-3 md:col-end-6 md:row-start-2 md:row-end-3 md:aspect-[initial] aspect-16/9"
+                    href="/ubytovani"
+                    :img-url="asset('assets/ubytovani.png')"
+                    caption="Ubytování"
+                />
+                
+                <x-discover-bento-card
+                    class="lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 md:col-start-3 md:col-end-6 md:row-start-3 md:row-end-4 md:aspect-[initial] aspect-16/9"
+                    href="/sauna"
+                    :img-url="asset('assets/sauna-para.png')"
+                    caption="Sauna a pára"
+                />
+                
+                <x-discover-bento-card
+                    class="lg:col-start-3 lg:col-end-6 lg:row-start-2 lg:row-end-3 md:col-start-1 md:col-end-4 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-16/9"
+                    href="/bazen#vnitrni"
+                    :img-url="asset('assets/wellness.png')"
+                    caption="Wellness"
+                />
+                
+                <x-discover-bento-card
+                    class="lg:col-start-8 lg:col-end-11 lg:row-start-2 lg:row-end-3 md:col-start-4 md:col-end-6 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-16/9"
+                    href="https://www.bazenlochotin.cz/"
+                    :img-url="asset('assets/lochotin.png')"
+                    caption="Bazén Lochotín"
+                />
             </div>
             <div class="flex justify-center">
                 <x-href-button :href="route('bazen')" class="px-20 max-w-full">Objevte možnosti</x-href-button>

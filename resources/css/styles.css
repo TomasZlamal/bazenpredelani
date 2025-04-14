@@ -64,10 +64,10 @@
     right: 1rem;
     top: 0.885rem;
     transform: rotate(0);
-    transition: all;
+    transition: all 150ms;
 }
 input[type="checkbox"]:checked + label.icon-faq::after {
-    transform: rotate(0.5rad);
+    transform: rotate(90deg);
     right: 1.25rem;
     top: 0.75rem;
 }
