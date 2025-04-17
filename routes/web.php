@@ -35,3 +35,9 @@ Route::get('/ubytovani', function () {
 Route::get('/ostatnisluzby', function () {
     return view('sluzby');
 });
+Route::get("/kontakty", function () {
+    return view('nastym');
+});
+Route::get("/clanek", function () {
+    return view('clanek');
+});

@@ -14,33 +14,33 @@
             </div>
             <div class="grid gap-6 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                 <article class="lg:first:col-span-1 md:first:col-span-2 rounded-lg overflow-hidden shadow-md">
-                    <a href="#" class="block overflow-hidden m-0">
+                    <a href="{{ url('/clanek') }}" class="block overflow-hidden m-0">
                         <img src="/assets/post-img.png" alt="Post image" class="aspect-16/10 w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
                     </a>
                     <div class="bg-bs-grey-150 px-6 pt-4 pb-6 h-full">
                         <h3 class="mb-2">Zavřeno lol</h3>
                         <p>Bazén Slovany s potěšením oznamuje otevření nového venkovního areálu. Návštěvníci se mohou těšit na moderní plavecké dráhy, relaxační zóny a různé vodní atrakce, které zajistí zábavu pro celou rodinu. Přijďte si užít letní pohodu v novém prostředí!</p>
-                        <a class="icon-link-arrow inline-block text-bs-blue-700 hover:text-bs-blue-800 visited:text-bs-blue-800 active:text-bs-blue-800 hover:underline font-medium mt-3 motion-reduce:transition-none" href="#">Zjistěte více</a>
+                        <a class="icon-link-arrow inline-block text-bs-blue-700 hover:text-bs-blue-800 visited:text-bs-blue-800 active:text-bs-blue-800 hover:underline font-medium mt-3 motion-reduce:transition-none" href="{{ url('/clanek') }}">Zjistěte více</a>
                     </div>
                 </article>
                 <article class="lg:first:col-span-1 md:first:col-span-2 rounded-lg overflow-hidden shadow-md">
-                    <a href="#" class="block overflow-hidden m-0">
+                    <a href="{{ url('/clanek') }}" class="block overflow-hidden m-0">
                         <img src="/assets/post-img.png" alt="Post image" class="aspect-16/10 w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
                     </a>
                     <div class="bg-bs-grey-150 px-6 pt-4 pb-6 h-full">
                         <h3 class="mb-2">Tohle se aktuálně děje</h3>
                         <p>Bazén Slovany s potěšením oznamuje otevření nového venkovního areálu. Návštěvníci se mohou těšit Návštěvníci se mohou těšit Návštěvníci se mohou těšit na moderní plavecké dráhy, relaxační zóny a různé vodní atrakce, které zajistí zábavu pro celou rodinu. Přijďte si užít letní pohodu v novém prostředí!</p>
-                        <a class="icon-link-arrow inline-block text-bs-blue-700 hover:text-bs-blue-800 visited:text-bs-blue-800 active:text-bs-blue-800 hover:underline font-medium mt-3 motion-reduce:transition-none" href="#">Zjistěte více</a>
+                        <a class="icon-link-arrow inline-block text-bs-blue-700 hover:text-bs-blue-800 visited:text-bs-blue-800 active:text-bs-blue-800 hover:underline font-medium mt-3 motion-reduce:transition-none" href="{{ url('/clanek') }}">Zjistěte více</a>
                     </div>
                 </article>
                 <article class="lg:first:col-span-1 md:first:col-span-2 rounded-lg overflow-hidden shadow-md">
-                    <a href="#" class="block overflow-hidden m-0">
+                    <a href="{{ url('/clanek') }}" class="block overflow-hidden m-0">
                         <img src="/assets/plavec.png" alt="Post image" class="aspect-16/10 object-cover w-full scale-[1.01] hover:scale-110 transition-transform rounded-none" />
                     </a>
                     <div class="bg-bs-grey-150 px-6 pt-4 pb-6 h-full">
                         <h3 class="mb-2">Tohle se aktuálně děje</h3>
                         <p>Bazén Slovany s potěšením oznamuje otevření nového venkovního areálu.</p>
-                        <a class="icon-link-arrow inline-block text-bs-blue-700 hover:text-bs-blue-800 visited:text-bs-blue-800 active:text-bs-blue-800 hover:underline font-medium mt-3 motion-reduce:transition-none" href="#">Zjistěte více</a>
+                        <a class="icon-link-arrow inline-block text-bs-blue-700 hover:text-bs-blue-800 visited:text-bs-blue-800 active:text-bs-blue-800 hover:underline font-medium mt-3 motion-reduce:transition-none" href="{{ url('/clanek') }}">Zjistěte více</a>
                     </div>
                 </article>
             </div>

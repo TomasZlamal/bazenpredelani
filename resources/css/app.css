@@ -188,6 +188,14 @@
     .cenik-element h2 {
         text-align: center
     }
+    .vert-image {
+        height: 250px;
+        width: auto;
+    }
+    .vert-elem {
+        min-width: 40vw;
+
+    }
 }
 @layer components {
 
