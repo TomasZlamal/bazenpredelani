@@ -193,9 +193,39 @@
         height: 250px;
         width: auto;
     }
-    .vert-elem {
-        min-width: 40vw;
+    .callout {
+        @apply p-8 rounded-lg border-l-4 my-4;
+        strong {
+            @apply inline-block text-h5 text-bs-blue-600 mb-1.5;
+        }
+    }
+    .callout-red {
+        @apply border-l-red-500 bg-red-200;
+        strong {
+            @apply text-red-500;
+        }
+        div * {
+            @apply text-red-900;
+        }
+    }
+    .callout-blue {
+        @apply bg-bs-blue-150 border-l-blue-600;
+        strong {
+            @apply text-bs-blue-600;
+        }
+        div * {
+            @apply text-blue-900;
+        }
 
+    }
+    .callout-yellow {
+        @apply bg-yellow-100 border-l-yellow-500;
+        strong {
+            @apply text-yellow-500;
+        }
+        div * {
+            @apply text-yellow-900;
+        }
     }
 }
 @layer components {
