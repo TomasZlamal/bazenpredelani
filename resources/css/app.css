@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 @import "tailwindcss";
+
 @source "../views";
-/*@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..700;1,400..700&display=swap");*/
 
 @theme {
     /* color */
     --color-bs-white: hsl(0, 0%, 100%);
-    --color-bs-black: hsl(0, 0%, 100%);
+    --color-bs-black: hsl(0, 6%, 0%);
     --color-bs-yellow: hsl(50, 100%, 50%);
 
     --color-bs-blue-100: hsl(216, 100%, 97.1%);

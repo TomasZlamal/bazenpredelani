@@ -4,8 +4,8 @@
         <h1 class="text-bs-white">Plavecký areál města Plzně</h1>
         <p class="text-bs-grey-200 max-w-[45rem] tracking-normal text-[1.05rem]">Bazén Slovany v Plzni je ideálním místem pro relaxaci a sportovní aktivity. Nabízí moderní zázemí s plaveckým bazénem, saunou a vířivkou, což zaručuje zábavu a odpočinek pro všechny věkové kategorie.</p>
         <div class="flex gap-y-4 items-center mt-8 flex-wrap">
-            <a role="button" class="inline-block text-bs-white hover:text-bs-white active:text-bs-white visited:text-bs-white bg-bs-blue-600 hover:bg-bs-blue-700 active:bg-bs-blue-800 font-normal px-8 py-3 rounded-full no-underline transition-all motion-reduce:transition-none" href="{{ url('/dostupnost') }}">Zkontrolovat dostupnost</a>
+            <x-href-button :href="route('dostupnost')">Zkontrolovat dostupnost</x-href-button>
             <a class="ml-4 icon-link-arrow font-medium text-bs-grey-300 hover:text-bs-grey-200 active:text-bs-grey-100 visited:text-bs-grey-300" href="{{ url('/bazen') }}">Více o bazénu</a>
-        </div
+        </div>
     </div>
 </section>

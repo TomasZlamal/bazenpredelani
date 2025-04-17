@@ -1,3 +1,3 @@
-<x-layout>
+<x-layouts.app title="Ubytování">
     <x-hero image="ubytovani.png" motto="Ubytování"/>
-</x-layout>
+</x-layouts.app>
