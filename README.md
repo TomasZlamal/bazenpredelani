@@ -9,7 +9,7 @@
 - [x] Komponent: blockquote (v components.html) _Tomáš_
 - [ ] Komponent: ostatní služby _Michal_
 - [ ] Článek single page šablona
-- [ ] Opravit animaci šipky u FAQ elementu (špatnej transform, asi kvůli tw4) _Michal_
+- [x] Opravit animaci šipky u FAQ elementu (špatnej transform, asi kvůli tw4) _Michal_
 
 ## Poznámky
 Možná by stálo za to udělat ještě pár komponentů, např. pro `<a>` s logikou vyznačení externího odkazu (jako footer) aby se lépe nasazovalo na CMS?

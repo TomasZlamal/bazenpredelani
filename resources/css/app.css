@@ -155,27 +155,29 @@
         font-style: unset;
     }
 
-    footer {
-        h2,
-        h3,
-        h4,
-        h5,
-        b,
-        strong {
-            @apply text-bs-grey-300;
-        }
-        b,
-        p,
-        a {
-            @apply text-bs-grey-300;
-        }
-        p {
-            @apply mb-0;
-        }
-        a {
-            @apply text-bs-grey-300 hover:text-bs-grey-150 active:text-bs-grey-400 visited:text-bs-grey-300 no-underline font-normal mb-0;
-        }
+    footer h2,
+    footer h3,
+    footer h4,
+    footer h5,
+    footer b,
+    footer strong {
+        @apply text-bs-grey-300;
     }
+
+    footer b,
+    footer p,
+    footer a {
+        @apply text-bs-grey-300;
+    }
+
+    footer p {
+        @apply mb-0;
+    }
+
+    footer a {
+        @apply text-bs-grey-300 hover:text-bs-grey-150 active:text-bs-grey-400 visited:text-bs-grey-300 no-underline font-normal mb-0;
+    }
+
     .sluzba {
         background-size: cover !important;
         background-repeat: no-repeat !important;
@@ -183,11 +185,13 @@
         min-width: 300px;
         height: fit-content;
     }
+
     .cenik-element:nth-child(even) {
         background-color: var(--color-bs-blue-200);
     }
+
     .cenik-element h2 {
-        text-align: center
+        text-align: center;
     }
     .vert-image {
         height: 250px;
@@ -239,54 +243,3 @@
         @apply max-w-article mx-auto;
     }
 }
-
-
-/*
-    .dropdown::after {
-        content: url(/public/assets/ico-dropdown.svg);
-        @apply inline-block w-2.5 pl-2 relative bottom-0.5;
-    }
-
-    #hero::before {
-        content: "";
-        background: linear-gradient(132.498deg, rgba(19, 19, 19, 72%) 62%, rgba(19, 19, 19, 42%) 89%, rgba(19, 19, 19, 0%) 100%);
-
-        @apply block absolute top-0 left-0 pointer-events-none w-full h-full z-[1];
-    }
-    #hero::after {
-        content: url(/public/assets/wave.svg);
-        width: 100%;
-        @apply w-full h-auto block absolute bottom-[-0.44rem] left-0 z-[2];
-    }
-    .icon-link-arrow::after {
-        content: "⟶";
-        text-decoration: none;
-        transition: padding 150ms ease-in-out;
-        @apply pl-1 inline-block;
-    }
-    .icon-link-arrow:hover::after {
-        @apply pl-2;
-    }
-    .icon-external-link {
-        @apply flex content-start;
-    }
-    .icon-external-link::after {
-        content: url(/public/assets/ico-link-external.svg);
-        @apply pl-[0.15rem] leading-[0.75rem] top-0 right-0;
-    }
-    .icon-faq::after {
-        content: url(/public/assets/ico-open-right.svg);
-        @apply inline-block absolute h-auto right-4 top-[0.885rem] rotate-0 transition-all;
-    }
-    input[type="checkbox"]:checked + label.icon-faq::after {
-        @apply rotate-90 right-5 top-3;
-    }
-    .icon-tel::before {
-        content: url(/public/assets/ico-call.svg);
-        @apply mr-2 relative top-0.5;
-    }
-    .icon-mail::before {
-        content: url(/public/assets/ico-mail.svg);
-        @apply mr-2 relative top-0.5;
-    }
-*/
