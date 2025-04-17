@@ -96,7 +96,7 @@
                                 </tbody>
                             </table>
                         </div>
-            <a role="button" class="inline-block text-bs-white hover:text-bs-white active:text-bs-white visited:text-bs-white bg-bs-blue-600 hover:bg-bs-blue-700 active:bg-bs-blue-800 font-normal px-6 py-3 rounded-full no-underline transition-all motion-reduce:transition-none" href="#">Objevte možnosti</a>
+            <x-href-button href="#">Test</x-href-button>
         </section>
         <x-blue-section>
             <div class="max-width-blog-container">
