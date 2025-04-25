@@ -1,12 +1,12 @@
 .bg-image {
-    background-image: url('/public/assets/hero.png');
+    background-image: url('/public/assets/images/venkovni_bazen_shora.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .dropdown::after {
-    content: url(/public/assets/ico-dropdown.svg);
+    content: url(/public/assets/icons/ico-dropdown.svg);
     display: inline-block;
     width: 0.625rem;
     padding-left: 0.5rem;
@@ -26,7 +26,7 @@
     z-index: 1;
 }
 #hero::after {
-    content: url(/public/assets/wave.svg);
+    content: url(/public/assets/misc/wave.svg);
     width: 100%;
     height: auto;
     display: block;
@@ -50,14 +50,14 @@
     align-content: start;
 }
 .icon-external-link::after {
-    content: url(/public/assets/ico-link-external.svg);
+    content: url(/public/assets/icons/ico-link-external.svg);
     padding-left: 0.15rem;
     line-height: 0.75rem;
     top:0;
     right: 0;
 }
 .icon-faq::after {
-    content: url(/public/assets/ico-open-right.svg);
+    content: url(/public/assets/icons/ico-open-right.svg);
     display: inline-block;
     position: absolute;
     height: auto;
@@ -72,7 +72,7 @@ input[type="checkbox"]:checked + label.icon-faq::after {
     top: 0.75rem;
 }
 .icon-tel::before {
-    content: url(/public/assets/ico-call.svg);
+    content: url(/public/assets/icons/ico-call.svg);
     margin-right: 0.5rem;
     position: relative;
     top: 0.125rem;
@@ -81,5 +81,5 @@ input[type="checkbox"]:checked + label.icon-faq::after {
     margin-right: 0.5rem;
     position: relative;
     top: 0.125rem;
-    content: url(/public/assets/ico-mail.svg);
+    content: url(/public/assets/icons/ico-mail.svg);
 }

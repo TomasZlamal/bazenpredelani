@@ -14,3 +14,12 @@ if(! function_exists('getAsset')) {
 			: "/assets/$name";
 	}
 }
+
+if(! function_exists('getImage')) {
+	function getImage(string $name, bool $full = false): string
+	{
+		return $full
+			? public_path() . "/assets/images/$name"
+			: "/assets/images/$name";
+	}
+}

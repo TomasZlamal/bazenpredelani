@@ -34,7 +34,7 @@
             <x-callout :type="\App\Enums\CalloutEnum::YELLOW">
                 <p>Za každou překročenou minutu je účtován doplatek 2,- Kč / minuta (při pobytu v bazénu) nebo 4,- Kč / minuta (při pobytu v sauně), a to bez ohledu na to, zda se jedná o zakoupené plné či slevové vstupné.</p>
                 <p>Za ztrátu jakéhokoliv čipového náramku či karty je účtován poplatek 200,- Kč. Za nalezení a vrácení čipu po době pobytu v areálu se uhrazená částka nevrací.</p>
-                <p>V případě opětovného nálezu čipového náramku či karty v době pobytu nebo nouzového otevření skříňky je účtován pouze manipulační poplatek 100,- Kč.</pv>
+                <p>V případě opětovného nálezu čipového náramku či karty v době pobytu nebo nouzového otevření skříňky je účtován pouze manipulační poplatek 100,- Kč.</p>
             </x-callout>
                         <p><strong>Bold Text Example</strong></p>
                         <p><em>Italic Text Example</em></p>

@@ -2,7 +2,7 @@
 
 return [
 	'logo' => [
-		'url' => '/assets/logo-bazen.png',
+		'url' => '/assets/misc/logo-bazen.png',
 		'alt' => 'Bazén Slovany',
 	],
 
@@ -12,7 +12,7 @@ return [
 	],
 
 	'article' => [
-		'default_img_url' => '/assets/hero.webp',
+		'default_img_url' => '/assets/images/bazen-render.webp',
 		'default_img_alt' => 'Bazén Slovany'
 	],
 

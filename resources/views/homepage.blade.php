@@ -68,50 +68,52 @@
                 <x-discover-bento-card
                     class="lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-2 md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-16/9"
                     href="/bazen#vnitrni"
-                    :img-url="asset('assets/bazen.png')"
+                    :img-url="getImage('bazen_vnitrni_3.jpg')"
                     caption="Vnitřní bazén"
                 />
 
                 <x-discover-bento-card
                     class="lg:col-start-4 lg:col-end-6 lg:row-start-1 lg:row-end-2 md:col-start-4 md:col-end-6 md:row-start-1 md:row-end-2 md:aspect-[initial] aspect-16/9"
                     href="bazen#orinoko"
-                    :img-url="asset('assets/divoka-reka.png')"
+                    :img-url="getImage('divoka_reka.jpg')"
                     caption="Divoká řeka"
                 />
 
                 <x-discover-bento-card
-                    class="lg:col-start-6 lg:col-end-8 lg:row-start-1 lg:row-end-3 md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-4 md:aspect-[initial] aspect-16/9"
+                    class="lg:col-start-6 lg:col-end-8 lg:row-start-1 lg:row-end-3 md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-4 md:aspect-[initial] aspect-16/9 "
                     href="https://www.plaveckyklubplzen.cz/"
-                    :img-url="asset('assets/plavec.png')"
+                    :img-url="getImage('plavec.png')"
                     caption="Plavecká škola a klub Slávia"
+                    image-adjustments="object-[65%_50%]"
                 />
 
                 <x-discover-bento-card
                     class="lg:col-start-8 lg:col-end-11 lg:row-start-1 lg:row-end-1 md:col-start-3 md:col-end-6 md:row-start-2 md:row-end-3 md:aspect-[initial] aspect-16/9"
                     href="/ubytovani"
-                    :img-url="asset('assets/ubytovani.png')"
+                    :img-url="getImage('ubytovani.png')"
                     caption="Ubytování"
                 />
 
                 <x-discover-bento-card
                     class="lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 md:col-start-3 md:col-end-6 md:row-start-3 md:row-end-4 md:aspect-[initial] aspect-16/9"
                     href="/sauna"
-                    :img-url="asset('assets/sauna-para.png')"
+                    :img-url="getImage('sauna_a_para.jpg')"
                     caption="Sauna a pára"
                 />
 
                 <x-discover-bento-card
                     class="lg:col-start-3 lg:col-end-6 lg:row-start-2 lg:row-end-3 md:col-start-1 md:col-end-4 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-16/9"
                     href="/bazen#vnitrni"
-                    :img-url="asset('assets/wellness.png')"
+                    :img-url="getImage('wellness.jpg')"
                     caption="Wellness"
                 />
 
                 <x-discover-bento-card
                     class="lg:col-start-8 lg:col-end-11 lg:row-start-2 lg:row-end-3 md:col-start-4 md:col-end-6 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-16/9"
                     href="https://www.bazenlochotin.cz/"
-                    :img-url="asset('assets/lochotin.png')"
-                    caption="Bazén Lochotín"
+                    :img-url="getAsset('/misc/plavecka-skola.png')"
+                    caption="Plavecká škola"
+                    image-adjustments="object-scale-down"
                 />
             </div>
             <div class="flex justify-center">

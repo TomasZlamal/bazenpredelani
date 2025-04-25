@@ -1,5 +1,5 @@
 <x-layouts.app title="Ceník">
-    <x-hero image="bazen.png" motto="Ceník"/>
+    <x-hero :image="getImage('recepce.jpg')" motto="Ceník"/>
     <section class="flex flex-col justify-center p-0 mt-12">
         <x-cenik.price-element title="Vstupné do plaveckého areálu">
             <table>

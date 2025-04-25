@@ -14,7 +14,8 @@ class DiscoverBentoCard extends Component
     public function __construct(
 		public string $imgUrl,
 		public string $href,
-		public string $caption = ''
+		public string $caption = '',
+		public string $imageAdjustments = '', // CSS for changing position of the image
 	) {}
 
     /**

@@ -52,6 +52,7 @@
     --radius-lg: 1rem;
 
     /* breakpoints */
+    --breakpoint-xs: 20rem;
     --breakpoint-sm: 26rem;
     --breakpoint-md: 35rem;
     --breakpoint-lg: 52rem;
@@ -63,6 +64,7 @@
     /* max-width */
     --spacing-content: 68.75rem;
     --spacing-article: 45rem;
+
 }
 
 @layer base {

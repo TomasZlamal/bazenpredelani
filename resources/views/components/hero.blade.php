@@ -5,7 +5,7 @@
 </section>
 <style>
 #hero {
-    background-image: url('assets/{{ $image }}');
+    background-image: url({!! $image !!});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

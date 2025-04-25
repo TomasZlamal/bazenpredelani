@@ -1,5 +1,5 @@
 <x-layouts.app class="Dostupnost">
-    <x-hero image="hero2.jpg" motto="Dostupnost"/>
+    <x-hero :image="getImage('turniket.jpg')" motto="Dostupnost"/>
     <section>
         <iframe
             height="100%"

@@ -16,7 +16,8 @@ class ShowcaseSection extends Component
 		public string $description = '',
 		public string $imgUrl,
 		public string $imgAlt = '',
-		public string $id = ''
+		public string $id = '',
+		public bool $highlighted = false,
 	) {}
 
     /**
@@ -24,6 +25,8 @@ class ShowcaseSection extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.showcase-section');
+        return view('components.showcase-section', [
+			'sectionColor' => $this->highlighted ? 'bg-bs-blue-150' : 'bg-white'
+		]);
     }
 }
