@@ -18,6 +18,7 @@ class ShowcaseSection extends Component
 		public string $imgAlt = '',
 		public string $id = '',
 		public bool $highlighted = false,
+		public bool $inverted = false,
 	) {}
 
     /**

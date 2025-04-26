@@ -20,7 +20,7 @@
                                 <x-header-link-desktop href="{{ 'https://www.plaveckaskolaplzen.cz/plavecka-skola-plzen-slovany/' }}">Plavecká škola</x-header-link-desktop>
                                 <x-header-link-desktop href="{{ route('cenik') }}">Ceník</x-header-link-desktop>
                                 <x-header-link-desktop href="{{ route('ubytovani') }}">Ubytování</x-header-link-desktop>
-                                <x-header-link-desktop href="{{ route('sluzby') }}">Ostatní služby</x-header-link-desktop>
+                                <x-header-link-desktop href="{{ route('sluzby') }}">Služby</x-header-link-desktop>
                             
                             </ul>
                         </div>
@@ -59,7 +59,7 @@
                     <x-header-link-mobile href="https://www.plaveckaskolaplzen.cz/plavecka-skola-plzen-slovany/">Plavecká škola</x-header-link-mobile>
                     <x-header-link-mobile href="{{ route('cenik') }}">Ceník</x-header-link-mobile>
                     <x-header-link-mobile href="{{ route('ubytovani') }}">Ubytování</x-header-link-mobile>
-                    <x-header-link-mobile href="{{ route('sluzby') }}">Ostatní služby</x-header-link-mobile>
+                    <x-header-link-mobile href="{{ route('sluzby') }}">Služby</x-header-link-mobile>
                 </ul>
             </div>
         </div>

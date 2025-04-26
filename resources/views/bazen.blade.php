@@ -19,6 +19,7 @@
         :img-url="getImage('maly_bazen_2.jpg')"
         img-alt=""
         highlighted
+        inverted
     >
         <x-showcase-block highlight="12 x 8m" text="Velikost bazénu" highlighted/>
         <x-showcase-block highlight="29°C" text="Teplota vody" highlighted/>
@@ -44,6 +45,7 @@
         :img-url="getImage('tobogan.jpg')"
         img-alt=""
         highlighted
+        inverted
     >
         <x-showcase-block highlight="86m" text="Délka tobogánu" highlighted/>
         <x-showcase-block highlight="15m" text="Převýšení" highlighted/>
@@ -67,6 +69,7 @@
         :img-url="getImage('relaxacni_bazen.jpg')"
         img-alt=""
         highlighted
+        inverted
     >
         <x-showcase-block highlight="32 - 34°C" text="Teplota vody" highlighted/>
         <x-showcase-block highlight="1.2m" text="Největší hloubka" highlighted/>
@@ -90,6 +93,7 @@
         :img-url="getImage('vyrivky2.jpg')"
         img-alt=""
         highlighted
+        inverted
     >
         <x-showcase-block highlight="2" text="Masážní výřivky" highlighted/>
         <x-showcase-block highlight="35°C" text="Teplota vody" highlighted/>
@@ -99,7 +103,7 @@
     <x-showcase-section
         id="brouzdaliste"
         heading="Dětské brouzdaliště"
-        description="Po pravé straně při vstupu do bazénu najdete dětské brouzdaliště s horkou vodou, skluzavkou, vodopádem a herními prvky"
+        description="Po pravé straně při vstupu do bazénu najdete brouzdaliště pro děti s horkou vodou, skluzavkou, vodopádem a herními prvky. "
         :img-url="getImage('brouzdaliste.jpg')"
         img-alt=""
     >

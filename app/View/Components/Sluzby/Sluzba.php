@@ -11,7 +11,11 @@ class Sluzba extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public string $image, public string $text, public string $link)
+    public function __construct(
+		public string $image,
+		public string $text,
+		public string $link
+	)
     {
         //
     }
@@ -21,6 +25,6 @@ class Sluzba extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.sluzby.sluzba');
+        return view('components.sluzba');
     }
 }
