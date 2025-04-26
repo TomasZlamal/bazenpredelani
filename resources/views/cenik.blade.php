@@ -1,93 +1,53 @@
 <x-layouts.app title="Ceník">
     <x-hero :image="getImage('recepce.jpg')" motto="Ceník"/>
-    <section class="flex flex-col justify-center p-0 mt-12">
-        <x-cenik.price-element title="Vstupné do plaveckého areálu">
-            <table>
-                <tr>
-                    <th>Časy</th>
-                    <th>Plnocenné</th>
-                    <th>Slevové</th>
-                    <th>Rodinné</th>
-                </tr>
-                <tr>
-                    <th>1.5 hodin</th>
-                    <th>100kč</th>
-                    <th>100kč</th>
-                    <th>100kč</th>
-                </tr>
-                <tr>
-                    <th>3 hodiny</th>
-                    <th>100kč</th>
-                    <th>100kč</th>
-                    <th>100kč</th>
-                </tr>
-                <tr>
-                    <th>Celodenní</th>
-                    <th>100kč</th>
-                    <th>100kč</th>
-                    <th>100kč</th>
-                </tr>
+    <x-page-section narrower>
+        <h2>Jednorázové vstupné</h2>
+        <table class="table-primary first-cell-highlight w-full">
+            <tr>
+                <th>Časy</th>
+                <th>Plnocenné</th>
+                <th>Slevové</th>
+                <th>Rodinné</th>
+            </tr>
+            <tr>
+                <td>1.5 hodin</td>
+                <td>100kč</td>
+                <td>100kč</td>
+                <td>100kč</td>
+            </tr>
+            <tr>
+                <td>3 hodiny</td>
+                <td>100kč</td>
+                <td>100kč</td>
+                <td>100kč</td>
+            </tr>
+            <tr>
+                <td>Celodenní</td>
+                <td>100kč</td>
+                <td>100kč</td>
+                <td>100kč</td>
+            </tr>
+        
+        </table>
+    </x-page-section>
+    <x-page-section highlighted narrower>
+        <h2>Permanentka na plavání</h2>
+        <p>Permanentní vstupenka nabízí <strong>zvýhodněné vstupné do bazénu</strong>.</p>
+        <p>Vstupné je čerpané po minutách. Je platné v plaveckém areálu bazén Slovany i bazén Lochotín. <strong>Neplatí do sauny na Slovanech, je určena především na plavání</strong></p>
+        <p>Cena permanentky je 1,- Kč / minuta s možností dobití od 500 minut (500,- Kč) a více. Např. 1 hodina plavání = 60,- Kč.</p>
+        <p>Platnost permanentky je 1 rok od data vystavení či jejího znovunabití.</p>
+        <p> Při zakoupení permanentky si je nutno vyzvednout oproti záloze 100,- Kč elektronický čip, záloha je klientovi vrácena, pokud vrátí nepoškozený čip včetně náramku.</p>
+        <p>Permanentní vstupenka je přenosná, ale v jeden okamžik na ní může do areálu vstoupit pouze 1 osoba.</p>
+        <p>V ceně vstupného je umožněn vstup do atrakcí, parních komor, brouzdaliště, malého bazénu, venkovního areálu = nafukovací haly, a to v jejich uvedených provozních hodinách.</p>
+        <p>Permanentka na plavání má červený pásek a červenobílý čip.</p>
+        
+    </x-page-section>
+{{--        <div class="flex flex-col items-center bg-bs-yellow py-10">--}}
+{{--            <h3 class=" text-center">Pravidla pro výše uvedené tarify </h3>--}}
+{{--            <p class="w-[80vw]">Za každých překročených 15 minut je účtován doplatek 20,- Kč (při pobytu v bazénu) nebo 40,- Kč (při pobytu v sauně), a to bez ohledu na to, zda se jedná o zakoupené plné či slevové vstupné. Překročení není možné uhradit další zakoupenou hodinou.--}}
 
-            </table>
-        </x-cenik.price-element>
+{{--Za ztrátu jakéhokoliv čipového náramku či karty je účtován poplatek 200,- Kč. Za nalezení a vrácení čipu po době pobytu v areálu se uhrazená částka nevrací.--}}
 
-        <x-cenik.price-element title="Rodinné vstupné">
-            <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed rutrum lacus. Pellentesque vitae tempor sapien. Proin facilisis, ante nec interdum dictum, nunc elit feugiat nunc, in aliquet nisl diam nec nisl. Vestibulum tempus tellus non urna ultrices, quis porta odio pulvinar. Aliquam scelerisque scelerisque arcu et mattis. Fusce volutpat ante ac velit imperdiet, eget auctor felis mattis. Nam viverra quis ligula quis maximus. Proin congue dui eget turpis euismod vulputate. Donec accumsan ex eu bibendum gravida. Nullam eget tempor sem. Quisque vitae ex libero. Morbi interdum massa sit amet arcu ultrices scelerisque. Nulla malesuada velit a ante finibus, a rhoncus turpis elementum. In hac habitasse platea dictumst.
-
-Quisque blandit massa sit amet mauris gravida hendrerit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis in lectus lobortis, tincidunt ante a, aliquam nisl. Praesent vitae rhoncus felis. Nullam et feugiat justo. Nullam aliquet diam at magna cursus, a hendrerit nisi pulvinar. Aenean ac lacinia odio. In sit amet semper odio. Sed eget odio quis ante finibus cursus ut vel lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt semper elit quis dignissim. Morbi ut nunc sapien. Cras faucibus vel lectus sit amet fermentum. Quisque et nunc nec lacus tincidunt maximus. Donec bibendum turpis vel neque ornare scelerisque.
-
-Vestibulum urna augue, ultricies at mattis ac, dapibus sit amet lorem. Nullam tincidunt purus mattis enim imperdiet suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc facilisis finibus tortor, vel sodales metus gravida ac. Vivamus in tortor tristique, lobortis elit in, venenatis lorem. Duis quis volutpat sapien. Donec aliquet fringilla arcu, a volutpat dolor suscipit eget. Morbi pretium justo id dui porttitor congue nec sed lorem. Nunc varius eleifend faucibus.
-            </p>
-        </x-cenik.price-element>
-        <x-cenik.price-element title="Slevové vstupné">
-            <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed rutrum lacus. Pellentesque vitae tempor sapien. Proin facilisis, ante nec interdum dictum, nunc elit feugiat nunc, in aliquet nisl diam nec nisl. Vestibulum tempus tellus non urna ultrices, quis porta odio pulvinar. Aliquam scelerisque scelerisque arcu et mattis. Fusce volutpat ante ac velit imperdiet, eget auctor felis mattis. Nam viverra quis ligula quis maximus. Proin congue dui eget turpis euismod vulputate. Donec accumsan ex eu bibendum gravida. Nullam eget tempor sem. Quisque vitae ex libero. Morbi interdum massa sit amet arcu ultrices scelerisque. Nulla malesuada velit a ante finibus, a rhoncus turpis elementum. In hac habitasse platea dictumst.
-
-Quisque blandit massa sit amet mauris gravida hendrerit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis in lectus lobortis, tincidunt ante a, aliquam nisl. Praesent vitae rhoncus felis. Nullam et feugiat justo. Nullam aliquet diam at magna cursus, a hendrerit nisi pulvinar. Aenean ac lacinia odio. In sit amet semper odio. Sed eget odio quis ante finibus cursus ut vel lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt semper elit quis dignissim. Morbi ut nunc sapien. Cras faucibus vel lectus sit amet fermentum. Quisque et nunc nec lacus tincidunt maximus. Donec bibendum turpis vel neque ornare scelerisque.
-
-Vestibulum urna augue, ultricies at mattis ac, dapibus sit amet lorem. Nullam tincidunt purus mattis enim imperdiet suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc facilisis finibus tortor, vel sodales metus gravida ac. Vivamus in tortor tristique, lobortis elit in, venenatis lorem. Duis quis volutpat sapien. Donec aliquet fringilla arcu, a volutpat dolor suscipit eget. Morbi pretium justo id dui porttitor congue nec sed lorem. Nunc varius eleifend faucibus.
-            </p>
-
-        </x-cenik.price-element>
-        <x-cenik.price-element title="Vstupné je zdarma pro:">
-            <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed rutrum lacus. Pellentesque vitae tempor sapien. Proin facilisis, ante nec interdum dictum, nunc elit feugiat nunc, in aliquet nisl diam nec nisl. Vestibulum tempus tellus non urna ultrices, quis porta odio pulvinar. Aliquam scelerisque scelerisque arcu et mattis. Fusce volutpat ante ac velit imperdiet, eget auctor felis mattis. Nam viverra quis ligula quis maximus. Proin congue dui eget turpis euismod vulputate. Donec accumsan ex eu bibendum gravida. Nullam eget tempor sem. Quisque vitae ex libero. Morbi interdum massa sit amet arcu ultrices scelerisque. Nulla malesuada velit a ante finibus, a rhoncus turpis elementum. In hac habitasse platea dictumst.
-
-Quisque blandit massa sit amet mauris gravida hendrerit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis in lectus lobortis, tincidunt ante a, aliquam nisl. Praesent vitae rhoncus felis. Nullam et feugiat justo. Nullam aliquet diam at magna cursus, a hendrerit nisi pulvinar. Aenean ac lacinia odio. In sit amet semper odio. Sed eget odio quis ante finibus cursus ut vel lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt semper elit quis dignissim. Morbi ut nunc sapien. Cras faucibus vel lectus sit amet fermentum. Quisque et nunc nec lacus tincidunt maximus. Donec bibendum turpis vel neque ornare scelerisque.
-
-Vestibulum urna augue, ultricies at mattis ac, dapibus sit amet lorem. Nullam tincidunt purus mattis enim imperdiet suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc facilisis finibus tortor, vel sodales metus gravida ac. Vivamus in tortor tristique, lobortis elit in, venenatis lorem. Duis quis volutpat sapien. Donec aliquet fringilla arcu, a volutpat dolor suscipit eget. Morbi pretium justo id dui porttitor congue nec sed lorem. Nunc varius eleifend faucibus.
-            </p>
-
-        </x-cenik.price-element>
-        <x-cenik.price-element title="Sauna">
-            <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed rutrum lacus. Pellentesque vitae tempor sapien. Proin facilisis, ante nec interdum dictum, nunc elit feugiat nunc, in aliquet nisl diam nec nisl. Vestibulum tempus tellus non urna ultrices, quis porta odio pulvinar. Aliquam scelerisque scelerisque arcu et mattis. Fusce volutpat ante ac velit imperdiet, eget auctor felis mattis. Nam viverra quis ligula quis maximus. Proin congue dui eget turpis euismod vulputate. Donec accumsan ex eu bibendum gravida. Nullam eget tempor sem. Quisque vitae ex libero. Morbi interdum massa sit amet arcu ultrices scelerisque. Nulla malesuada velit a ante finibus, a rhoncus turpis elementum. In hac habitasse platea dictumst.
-
-Quisque blandit massa sit amet mauris gravida hendrerit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis in lectus lobortis, tincidunt ante a, aliquam nisl. Praesent vitae rhoncus felis. Nullam et feugiat justo. Nullam aliquet diam at magna cursus, a hendrerit nisi pulvinar. Aenean ac lacinia odio. In sit amet semper odio. Sed eget odio quis ante finibus cursus ut vel lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt semper elit quis dignissim. Morbi ut nunc sapien. Cras faucibus vel lectus sit amet fermentum. Quisque et nunc nec lacus tincidunt maximus. Donec bibendum turpis vel neque ornare scelerisque.
-
-Vestibulum urna augue, ultricies at mattis ac, dapibus sit amet lorem. Nullam tincidunt purus mattis enim imperdiet suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc facilisis finibus tortor, vel sodales metus gravida ac. Vivamus in tortor tristique, lobortis elit in, venenatis lorem. Duis quis volutpat sapien. Donec aliquet fringilla arcu, a volutpat dolor suscipit eget. Morbi pretium justo id dui porttitor congue nec sed lorem. Nunc varius eleifend faucibus.
-            </p>
-
-        </x-cenik.price-element>
-        <x-cenik.price-element title="Permanentky">
-            <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed rutrum lacus. Pellentesque vitae tempor sapien. Proin facilisis, ante nec interdum dictum, nunc elit feugiat nunc, in aliquet nisl diam nec nisl. Vestibulum tempus tellus non urna ultrices, quis porta odio pulvinar. Aliquam scelerisque scelerisque arcu et mattis. Fusce volutpat ante ac velit imperdiet, eget auctor felis mattis. Nam viverra quis ligula quis maximus. Proin congue dui eget turpis euismod vulputate. Donec accumsan ex eu bibendum gravida. Nullam eget tempor sem. Quisque vitae ex libero. Morbi interdum massa sit amet arcu ultrices scelerisque. Nulla malesuada velit a ante finibus, a rhoncus turpis elementum. In hac habitasse platea dictumst.
-
-Quisque blandit massa sit amet mauris gravida hendrerit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis in lectus lobortis, tincidunt ante a, aliquam nisl. Praesent vitae rhoncus felis. Nullam et feugiat justo. Nullam aliquet diam at magna cursus, a hendrerit nisi pulvinar. Aenean ac lacinia odio. In sit amet semper odio. Sed eget odio quis ante finibus cursus ut vel lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt semper elit quis dignissim. Morbi ut nunc sapien. Cras faucibus vel lectus sit amet fermentum. Quisque et nunc nec lacus tincidunt maximus. Donec bibendum turpis vel neque ornare scelerisque.
-
-Vestibulum urna augue, ultricies at mattis ac, dapibus sit amet lorem. Nullam tincidunt purus mattis enim imperdiet suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc facilisis finibus tortor, vel sodales metus gravida ac. Vivamus in tortor tristique, lobortis elit in, venenatis lorem. Duis quis volutpat sapien. Donec aliquet fringilla arcu, a volutpat dolor suscipit eget. Morbi pretium justo id dui porttitor congue nec sed lorem. Nunc varius eleifend faucibus.
-            </p>
-
-        </x-cenik.price-element>
-
-        <div class="flex flex-col items-center bg-bs-yellow py-10">
-            <h3 class=" text-center">Pravidla pro výše uvedené tarify </h3>
-            <p class="w-[80vw]">Za každých překročených 15 minut je účtován doplatek 20,- Kč (při pobytu v bazénu) nebo 40,- Kč (při pobytu v sauně), a to bez ohledu na to, zda se jedná o zakoupené plné či slevové vstupné. Překročení není možné uhradit další zakoupenou hodinou.
-
-Za ztrátu jakéhokoliv čipového náramku či karty je účtován poplatek 200,- Kč. Za nalezení a vrácení čipu po době pobytu v areálu se uhrazená částka nevrací.
-
-V případě opětovného nálezu čipového náramku či karty v době pobytu nebo nouzového otevření skříňky je účtován pouze manipulační poplatek 100,- Kč.</p>
-        </div>
-    </section>
+{{--V případě opětovného nálezu čipového náramku či karty v době pobytu nebo nouzového otevření skříňky je účtován pouze manipulační poplatek 100,- Kč.</p>--}}
+{{--        </div>--}}
 </x-layouts.app>

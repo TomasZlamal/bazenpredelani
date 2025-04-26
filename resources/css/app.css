@@ -63,7 +63,7 @@
 
     /* max-width */
     --spacing-content: 68.75rem;
-    --spacing-article: 45rem;
+    --spacing-article: 52rem;
 
 }
 
@@ -178,9 +178,9 @@
     /*    @apply bg-bs-blue-100;*/
     /*}*/
 
-    /*table.table-secondary.first-cell-highlight td:first-of-type {*/
-    /*    @apply font-semibold;*/
-    /*}*/
+    table.table-secondary.first-cell-highlight td:first-of-type {
+        @apply font-semibold;
+    }
 
     hr {
         @apply my-6;
