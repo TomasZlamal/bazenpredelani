@@ -8,7 +8,7 @@ use Illuminate\View\Component;
 
 class FaqCard extends Component
 {
-	static int $count = 1;
+	public static int $count = 1;
 
 	public int $id;
 

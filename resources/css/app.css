@@ -87,8 +87,7 @@
     h5, .h5 {
         @apply text-h5 font-semibold text-bs-blue-900 tracking-[-0.04rem] leading-snug mb-1.5 mt-1.5;
     }
-    p, ul, li, a,
-    .p {
+    p, ul, li, a, .p {
         @apply text-body text-bs-grey-900 leading-normal mb-3;
     }
     a {
@@ -121,24 +120,68 @@
     section, .section {
         @apply lg:py-20 md:py-24 py-12 lg:px-12 md:px-8 px-4 max-w-full;
     }
-    table {
-        @apply rounded-sm overflow-clip mt-4 mb-6;
+
+    /* Table - basic */
+    table.table-primary {
+        @apply rounded-lg overflow-clip mt-8 mb-6;
     }
-    table.first-cell-highlight tr > td:first-of-type {
-        @apply font-semibold;
-    }
-    tr, th, td {
+
+    table.table-primary tr,
+    table.table-primary th,
+    table.table-primary td {
         @apply text-center md:py-4 md:px-6 p-3;
     }
-    tr:first-of-type th {
-        @apply bg-bs-blue-700 text-bs-white font-semibold;
+
+    table.table-primary th {
+        @apply bg-bs-blue-800 text-bs-white font-semibold;
     }
-    tr:nth-of-type(n) {
+
+    table.table-primary tr:nth-of-type(n) {
         @apply bg-bs-blue-150;
     }
-    tr:nth-of-type(2n) {
+
+    table.table-primary tr:nth-of-type(2n) {
         @apply bg-bs-blue-100;
     }
+
+    table.table-primary.first-cell-highlight td:first-of-type {
+        @apply font-semibold;
+    }
+
+    /* Table - lines */
+
+    table.table-secondary tr,
+    table.table-secondary th,
+    table.table-secondary td {
+        @apply text-center md:py-4 md:px-6 p-3;
+    }
+    table.table-secondary tr {
+        @apply border-b-2 border-bs-blue-300/60 bg-bs-blue-200;
+    }
+    table.table-secondary tr:last-of-type {
+        @apply border-b-0
+    }
+
+    table.table-secondary .without-underline {
+        @apply border-bs-blue-200;
+    }
+
+    table.table-secondary th {
+        @apply bg-bs-blue-800 text-bs-white font-semibold;
+    }
+
+    /*table.table-secondary tr:nth-of-type(n) {*/
+    /*    @apply bg-bs-blue-150;*/
+    /*}*/
+
+    /*table.table-secondary tr:nth-of-type(2n) {*/
+    /*    @apply bg-bs-blue-100;*/
+    /*}*/
+
+    /*table.table-secondary.first-cell-highlight td:first-of-type {*/
+    /*    @apply font-semibold;*/
+    /*}*/
+
     hr {
         @apply my-6;
     }
@@ -200,12 +243,11 @@
         width: auto;
     }
     .callout {
-        @apply p-8 rounded-lg border-l-4 my-4;
-        strong {
-            @apply inline-block text-h5 text-bs-blue-600 mb-1.5;
+        strong:not(.h5) {
+            @apply inline text-body text-wrap;
         }
     }
-    .callout-red {
+    .callout-danger {
         @apply border-l-red-500 bg-red-200;
         strong {
             @apply text-red-500;
@@ -214,7 +256,7 @@
             @apply text-red-900;
         }
     }
-    .callout-blue {
+    .callout-info {
         @apply bg-bs-blue-150 border-l-blue-600;
         strong {
             @apply text-bs-blue-600;
@@ -224,7 +266,7 @@
         }
 
     }
-    .callout-yellow {
+    .callout-warning {
         @apply bg-yellow-100 border-l-yellow-500;
         strong {
             @apply text-yellow-500;

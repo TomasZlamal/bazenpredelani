@@ -4,7 +4,7 @@ namespace App\Enums;
 
 enum CalloutEnum
 {
-    case BLUE;
-    case RED;
-    case YELLOW;
+    case INFO;
+    case DANGER;
+    case WARNING;
 }
