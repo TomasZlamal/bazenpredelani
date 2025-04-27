@@ -13,7 +13,7 @@
         <section class="flex flex-row justify-center gap-8 flex-wrap">
             <x-contact-elem
                 id=""
-                :img-url="getAsset('kotora_img.png')"
+                :img-url="getAsset('images/kotora.jpg')"
                 name="Tomáš Kotora"
                 role="Vedoucí plaveckého bazénu"
                 phone="+420 789 131 222"
@@ -21,7 +21,7 @@
             />
             <x-contact-elem
                 id=""
-                :img-url="getAsset('kotora_img.png')"
+                :img-url="getAsset('images/kotora.jpg')"
                 name="Tomáš Kotora"
                 role="Vedoucí plaveckého bazénu"
                 phone="+420 789 131 222"
@@ -29,7 +29,7 @@
             />
             <x-contact-elem
                 id=""
-                :img-url="getAsset('kotora_img.png')"
+                :img-url="getAsset('images/kotora.jpg')"
                 name="Tomáš Kotora"
                 role="Vedoucí plaveckého bazénu"
                 phone="+420 789 131 222"
@@ -37,7 +37,7 @@
             />
             <x-contact-elem
                 id=""
-                :img-url="getAsset('kotora_img.png')"
+                :img-url="getAsset('images/kotora.jpg')"
                 name="Tomáš Kotora"
                 role="Vedoucí plaveckého bazénu"
                 phone="+420 789 131 222"
