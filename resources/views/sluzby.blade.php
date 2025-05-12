@@ -9,18 +9,18 @@
                     class="aspect-square"
                 />
                 <x-image-card-with-link
-                    href="bazen#divoka_reka"
+                    href="sluzby/modni-salon"
                     :img-url="getImage('kadernictvi.jpg')"
                     caption="Módní salón"
                     class="aspect-square"
                 />
                 <x-image-card-with-link
-                    href="bazen#divoka_reka"
+                    href="https://nabazenuplzen.cz/"
                     :img-url="getImage('restaurace.jpg')"
                     caption="Restaurace"
                     class="aspect-square"
                 />
             </div>
-           
+
     </x-page-section>
 </x-layouts.app>
