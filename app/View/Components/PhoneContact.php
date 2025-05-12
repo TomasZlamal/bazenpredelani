@@ -11,7 +11,7 @@ class PhoneContact extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public string $phone = "+420 111 222 333")
+    public function __construct(public string $phone)
     {
         //
     }

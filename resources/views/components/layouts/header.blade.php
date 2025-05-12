@@ -13,14 +13,15 @@
                     <div class="hidden nav:ml-6 nav:block">
                         <div class="flex space-x-4">
                             <ul class="flex justify-between gap-8 mb-0">
-                                <x-header-link-desktop href="{{ route('dostupnost') }}">Dostupnost</x-header-link-desktop>
-                                <x-header-link-desktop href="{{ route('bazen') }}">Bazénový svět</x-header-link-desktop>
-                                <x-header-link-desktop href="{{ route('wellness') }}">Wellness</x-header-link-desktop>
-                                <x-header-link-desktop href="{{ 'https://www.plaveckyklubplzen.cz/'}}">Plavecký klub</x-header-link-desktop>
-                                <x-header-link-desktop href="{{ 'https://www.plaveckaskolaplzen.cz/plavecka-skola-plzen-slovany/' }}">Plavecká škola</x-header-link-desktop>
-                                <x-header-link-desktop href="{{ route('cenik') }}">Ceník</x-header-link-desktop>
-                                <x-header-link-desktop href="{{ route('ubytovani') }}">Ubytování</x-header-link-desktop>
-                                <x-header-link-desktop href="{{ route('sluzby') }}">Služby</x-header-link-desktop>
+                                <x-header-link-desktop :href="route('dostupnost')">Dostupnost</x-header-link-desktop>
+                                <x-header-link-desktop :href="route('bazen')">Bazénový svět</x-header-link-desktop>
+                                <x-header-link-desktop :href="route('wellness')">Wellness</x-header-link-desktop>
+                                <x-header-link-desktop href="https://www.plaveckyklubplzen.cz/">Plavecký klub</x-header-link-desktop>
+                                <x-header-link-desktop href="https://www.plaveckaskolaplzen.cz/plavecka-skola-plzen-slovany/">Plavecká škola</x-header-link-desktop>
+                                <x-header-link-desktop :href="route('cenik')">Ceník</x-header-link-desktop>
+                                <x-header-link-desktop :href="route('ubytovani')">Ubytování</x-header-link-desktop>
+                                <x-header-link-desktop :href="route('sluzby')">Služby</x-header-link-desktop>
+{{--                            <x-header-link-desktop :href="route('kontakt')">Náš tým</x-header-link-desktop>--}}
                             
                             </ul>
                         </div>
@@ -52,14 +53,16 @@
         <div class="nav:hidden hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pb-3 pt-6">
                 <ul class="flex flex-col gap-6 mb-0">
-                    <x-header-link-mobile href="{{ route('dostupnost') }}">Dostupnost</x-header-link-mobile>
-                    <x-header-link-mobile href="{{ route('bazen') }}">Bazénový svět</x-header-link-mobile>
-                    <x-header-link-mobile href="{{ route('wellness') }}">Wellness</x-header-link-mobile>
+                    <x-header-link-mobile :href="route('dostupnost')">Dostupnost</x-header-link-mobile>
+                    <x-header-link-mobile :href="route('bazen')">Bazénový svět</x-header-link-mobile>
+                    <x-header-link-mobile :href="route('wellness')">Wellness</x-header-link-mobile>
                     <x-header-link-mobile href="https://www.plaveckyklubplzen.cz/">Plavecký klub</x-header-link-mobile>
                     <x-header-link-mobile href="https://www.plaveckaskolaplzen.cz/plavecka-skola-plzen-slovany/">Plavecká škola</x-header-link-mobile>
-                    <x-header-link-mobile href="{{ route('cenik') }}">Ceník</x-header-link-mobile>
-                    <x-header-link-mobile href="{{ route('ubytovani') }}">Ubytování</x-header-link-mobile>
-                    <x-header-link-mobile href="{{ route('sluzby') }}">Služby</x-header-link-mobile>
+                    <x-header-link-mobile :href="route('cenik')">Ceník</x-header-link-mobile>
+                    <x-header-link-mobile :href="route('ubytovani')">Ubytování</x-header-link-mobile>
+                    <x-header-link-mobile :href="route('sluzby')">Služby</x-header-link-mobile>
+{{--                <x-header-link-mobile :href="route('kontakt')">Náš tým</x-header-link-mobile>--}}
+                
                 </ul>
             </div>
         </div>

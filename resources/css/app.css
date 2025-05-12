@@ -115,14 +115,14 @@
     header * {
         @apply text-bs-white;
     }
-    figcaption {
+    .image-gradient {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0%) 54%, rgba(0, 0, 0, 60%) 100%);
     }
     section, .section {
         @apply lg:py-20 md:py-24 py-12 lg:px-12 md:px-8 px-4 max-w-full;
     }
 
-    /* Table - basic */
+    /* Table type - basic */
     table.table-primary {
         @apply rounded-lg overflow-clip mt-8 mb-6;
     }
@@ -149,7 +149,11 @@
         @apply font-semibold;
     }
 
-    /* Table - lines */
+    /* Table type - lines */
+
+    table.table-secondary {
+        @apply overflow-clip rounded-lg
+    }
 
     table.table-secondary tr,
     table.table-secondary th,
