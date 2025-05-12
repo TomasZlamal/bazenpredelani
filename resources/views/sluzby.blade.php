@@ -6,16 +6,19 @@
                     href="bazen#divoka_reka"
                     :img-url="getImage('fitness_city.jpg')"
                     caption="Fitness City"
+                    class="aspect-square"
                 />
                 <x-image-card-with-link
                     href="bazen#divoka_reka"
                     :img-url="getImage('kadernictvi.jpg')"
                     caption="Módní salón"
+                    class="aspect-square"
                 />
                 <x-image-card-with-link
                     href="bazen#divoka_reka"
                     :img-url="getImage('restaurace.jpg')"
                     caption="Restaurace"
+                    class="aspect-square"
                 />
             </div>
            
