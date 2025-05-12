@@ -103,7 +103,7 @@
 
                 <x-discover-bento-card
                     class="lg:col-start-3 lg:col-end-6 lg:row-start-2 lg:row-end-3 md:col-start-1 md:col-end-4 md:row-start-4 md:row-end-5 md:aspect-[initial] aspect-16/9"
-                    href="/bazen#vnitrni"
+                    href="/wellness"
                     :img-url="getImage('wellness.jpg')"
                     caption="Wellness"
                 />
