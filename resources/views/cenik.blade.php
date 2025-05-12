@@ -1,58 +1,64 @@
 <x-layouts.app title="Ceník">
     <x-hero :image="getImage('recepce.jpg')" motto="Ceník"/>
     <x-page-section narrower>
-        <h3>Položky ceníku</h3>
-        <ol class="toc-list">
-            <li>
-                <a href="#vstupne">
-                    <span class="title"></span>
-                    <span class="page">Jednorázové vstupné do bazénu</span>
-                </a>
-            </li>
-            <li>
-                <a href="#naplavani">
-                    <span class="title"></span>
-                    <span class="page">Permanentka na plavání</span>
-                </a>
-            </li>
-            <li>
-                <a href="#slevove">
-                    <span class="title"></span>
-                    <span class="page">Slevové vstupné do bazénu</span>
-                </a>
-            </li>
-            <li>
-                <a href="#rodinne">
-                    <span class="title"></span>
-                    <span class="page">Rodinné vstupné do bazénu</span>
-                </a>
-            </li>
-            <li>
-                <a href="#zdarma">
-                    <span class="title"></span>
-                    <span class="page">Vstup zdarma do bazénu</span>
-                </a>
-            </li>
-            <li>
-                <a href="#permanentkasauna">
-                    <span class="title"></span>
-                    <span class="page">Permanentka do sauny</span>
-                </a>
-            </li>
-            <li>
-                <a href="#jednorazovesauna">
-                    <span class="title"></span>
-                    <span class="page">Jednorázový vstup do sauny</span>
-                </a>
-            </li>
-
-
-
-
-
-        </ol>
-    </x-page-section>
-    <x-page-section narrower>
+        <div class="mb-12">
+            <h2 class="h3">Obsah</h2>
+            <ul class="*:list-none *:ml-0">
+                <li>
+                    <h3 class="h4">Bazén</h3>
+                    <ol>
+                        <li>
+                            <a href="#vstupne">
+                                <span class="title"></span>
+                                <span class="page">Jednorázové vstupné</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#naplavani">
+                                <span class="title"></span>
+                                <span class="page">Permanentka</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#slevove">
+                                <span class="title"></span>
+                                <span class="page">Slevové vstupné</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#rodinne">
+                                <span class="title"></span>
+                                <span class="page">Rodinné vstupné</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#zdarma">
+                                <span class="title"></span>
+                                <span class="page">Vstup zdarma</span>
+                            </a>
+                        </li>
+                    </ol>
+                <li>
+                    <h3 class="h4">Wellness</h3>
+                    <ol>
+                        <li>
+                            <a href="#permanentkasauna">
+                                <span class="title"></span>
+                                <span class="page">Permanentka</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#jednorazovesauna">
+                                <span class="title"></span>
+                                <span class="page">Jednorázový vstup</span>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        
+        
         <h2 id="vstupne">Jednorázové vstupné do bazénu</h2>
         <h3>Po zavření vnitřního bazénu</h3>
         <table class="table-primary first-cell-highlight w-full">

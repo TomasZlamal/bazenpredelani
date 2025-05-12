@@ -5,6 +5,6 @@
     <div class="bg-bs-grey-150 px-6 pt-4 pb-6 h-full">
         <h3 class="mb-2">{{$title}}</h3>
         <p>{{$excerpt}}<p>
-        <a class="icon-link-arrow inline-block text-bs-blue-700 hover:text-bs-blue-800 visited:text-bs-blue-800 active:text-bs-blue-800 hover:underline font-medium mt-3 motion-reduce:transition-none" href="{{$url}}">Číst dále</a>
+        <a class="icon-link-arrow inline-block py-2 pr-2 text-bs-blue-700 hover:text-bs-blue-800 visited:text-bs-blue-800 active:text-bs-blue-800 hover:underline font-medium mt-3 motion-reduce:transition-none" href="{{$url}}">Číst dále</a>
     </div>
 </article>

@@ -1,11 +1,26 @@
 <x-layouts.app title="Služby">
     <x-hero :image="getImage('prvni_patro.jpg')" motto="Služby"/>
-    <section class="flex flex-row gap-8 flex-wrap">
-{{--        <div class="max-container-width"> --}}
-            <p>V areálu bazénu a okolí Vám rádi nabídneme doplňkové služby</p>
-            <x-sluzba :image="getImage('ubytovani.png')" text="Fitness City" link="#"/>
-            <x-sluzba :image="getImage('ubytovani.png')" text="Fitness City" link="#"/>
-            <x-sluzba :image="getImage('ubytovani.png')" text="Fitness City" link="#"/>
-{{--        </div>--}}
-    </section>
+    <x-page-section class="flex flex-row gap-8 flex-wrap">
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 justify-center">
+                <x-image-card-with-link
+                    href="bazen#divoka_reka"
+                    :img-url="getImage('fitness_city.jpg')"
+                    caption="Fitness City"
+                    class="aspect-square"
+                />
+                <x-image-card-with-link
+                    href="bazen#divoka_reka"
+                    :img-url="getImage('kadernictvi.jpg')"
+                    caption="Módní salón"
+                    class="aspect-square"
+                />
+                <x-image-card-with-link
+                    href="bazen#divoka_reka"
+                    :img-url="getImage('restaurace.jpg')"
+                    caption="Restaurace"
+                    class="aspect-square"
+                />
+            </div>
+           
+    </x-page-section>
 </x-layouts.app>

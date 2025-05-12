@@ -2,7 +2,7 @@
     <div class="max-width-container flex flex-wrap gap-16">
         <div class="flex flex-row flex-wrap gap-2 items-center">
             <p class="h4 text-white">Bazén Slovany |</p>
-            <p class="mt-[0.17rem]">Největší plavecký areál v Plzeňském kraji.</p>
+            <p class="mt-[0.17rem]">Největší plavecký areál v Plzeňském kraji</p>
         </div>
         
         <div class="flex md:flex-nowrap flex-wrap bg-bs-blue-950 rounded-lg overflow-clip w-full">
@@ -22,16 +22,16 @@
                 <address class="flex md:gap-4 gap-x-8 gap-y-4 md:flex-col flex-row flex-wrap">
                     <dl class="flex flex-col">
                         <dt><b>Recepce</b></dt>
-                        <dd><a href="#">+420 377 240 309</a></dd>
+                        <dd><a href="tel:+420377240309">+420 377 240 309</a></dd>
                     </dl>
                     <dl class="flex flex-col">
                         <dt><b>Informace</b></dt>
-                        <dd><a href="#">+420 377 240 306</a></dd>
+                        <dd><a href="tel:+420377240306">+420 377 240 306</a></dd>
                     </dl>
                     <div class="flex flex-col">
                         <p>Náměstí Gen. Píky 42</p>
                         <p>326 00 Plzeň</p>
-                        <a href="tel:info@bazenslovany.cz" class="underline mt-2">info&#64;bazenslovany.cz</a>
+                        <a href="mailto:info@bazenslovany.cz" class="underline mt-2">info&#64;bazenslovany.cz</a>
                     </div>
                 </address>
             </div>
@@ -41,48 +41,61 @@
             <ul class="flex flex-row flex-wrap md:gap-24 gap-10 gap-y-6">
                 <li>
                     <ul class="flex flex-col gap-2">
-                        <x-footer.heading>Heading</x-footer.heading>
-                        <x-footer.link href="/sluzby">Sluzby</x-footer.link>
-                        <x-footer.link href="https://youtube.com">External</x-footer.link>
-                        <x-footer.link href="#">Hyperlink</x-footer.link>
-                        <x-footer.link href="#">Hyperlink</x-footer.link>
+                        <x-footer.heading>Areál bazénu</x-footer.heading>
+                        
+                        <x-footer.link :href="route('bazen')">Bazénový svět</x-footer.link>
+                        <x-footer.link :href="route('wellness')">Wellness</x-footer.link>
+                        <x-footer.link :href="route('ubytovani')">Ubytování</x-footer.link>
                     </ul>
                 </li>
                 <li>
                     <ul class="flex flex-col gap-2">
-                        <x-footer.heading>Heading</x-footer.heading>
-                        <x-footer.link href="/sluzby">Sluzby</x-footer.link>
-                        <x-footer.link href="#">Hyperlink</x-footer.link>
-                        <x-footer.link href="#">Hyperlink</x-footer.link>
+                        <x-footer.heading>Sport</x-footer.heading>
+                        <x-footer.link href="https://www.plaveckaskolaplzen.cz/plavecka-skola-plzen-slovany/">Plavecká škola</x-footer.link>
+                        <x-footer.link href="https://www.plaveckyklubplzen.cz/">Plavecký klub</x-footer.link>
+                        <x-footer.link href="https://www.bazenlochotin.cz/">Bazén Lochotín</x-footer.link>
                     </ul>
                 </li>
                 <li>
                     <ul class="flex flex-col gap-2">
-                        <x-footer.heading>Heading</x-footer.heading>
-                        <x-footer.link href="#">Hyperlink</x-footer.link>
-                        <x-footer.link href="#">Hyperlink</x-footer.link>
-                        <x-footer.link href="#">Hyperlink</x-footer.link>
-                        <x-footer.link href="#">Hyperlink</x-footer.link>
+                        <x-footer.heading>Informace</x-footer.heading>
+                        
+                        <x-footer.link href="/dostupnost">Máme otevřeno?</x-footer.link>
+                        <x-footer.link href="/dostupnost#oteviraci_doba">Otevírací doba</x-footer.link>
+                        <x-footer.link href="/caste-otazky">Časté dotazy</x-footer.link>
+                        <x-footer.link href="/dostupnost#plan_akci">Plán akcí</x-footer.link>
+                        <x-footer.link :href="route('cenik')">Ceník</x-footer.link>
+                        <x-footer.link :href="route('dokumenty')">Dokumenty</x-footer.link>
                     </ul>
                 </li>
                 <li>
                     <ul class="flex flex-col gap-2">
-                        <x-footer.heading>Heading</x-footer.heading>
-                        <x-footer.link href="http://youtube.com">External</x-footer.link>
-                        <x-footer.link href="#">Hyperlink</x-footer.link>
-                        <x-footer.link href="#">Hyperlink</x-footer.link>
+                        <x-footer.heading>Služby</x-footer.heading>
+                        
+                        <x-footer.link :href="route('sluzby')">Všechny služby</x-footer.link>
+                        <x-footer.link :href="route('ubytovani')">Ubytování</x-footer.link>
+                        <x-footer.link :href="route('modni-salon')">Módní salón</x-footer.link>
+                        <x-footer.link href="https://www.fitnesscity.cz/">Fitness City</x-footer.link>
+                        <x-footer.link href="https://nabazenuplzen.cz/">Restaurace</x-footer.link>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="flex flex-col gap-2">
+                        <x-footer.heading>Kontakty</x-footer.heading>
+                        <x-footer.link :href="route('kontakt')">Náš tým</x-footer.link>
+                        <x-footer.link href="https://www.facebook.com/bazen.slovany">Facebook</x-footer.link>
                     </ul>
                 </li>
             </ul>
         </nav>
-        <div class="flex flex-wrap w-full justify-between gap-x-16 gap-y-1">
-            <p class="text-bs-grey-500">
+        <div class="flex flex-wrap w-full justify-between gap-x-16 gap-y-1 p-6 bg-bs-blue-950 rounded-xl">
+            <p class="text-bs-grey-300">
                 &copy; Bazén Slovany, {{date('Y')}}. Všechna práva vyhrazena.
             </p>
-            <p class="text-bs-grey-500">
+            <p class="text-bs-grey-300">
                 Vytvořili
-                <a class="underline text-bs-grey-500 visited:text-bs-grey-500" href="https://www.skoula.com">Michal Škoula</a>,
-                <a class="underline text-bs-grey-500 visited:text-bs-grey-500" href="https://www.zlamal.tech">Tomáš Zlámal</a>.
+                <a class="underline text-bs-grey-300 visited:text-bs-grey-300 hover:text-bs-gray-200 transition-colors" href="https://www.skoula.com">Michal Škoula</a>,
+                <a class="underline text-bs-grey-300 visited:text-bs-grey-300 hover:text-bs-gray-200 transition-colors" href="https://www.zlamal.tech">Tomáš Zlámal</a>.
             </p>
         </div>
     </div>

@@ -17,7 +17,6 @@ class FaqCard extends Component
      */
     public function __construct(
 		public string $question,
-		public string $answer,
 	) {
 		$this->id = self::$count;
 		self::$count++;

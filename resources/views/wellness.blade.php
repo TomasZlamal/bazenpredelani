@@ -3,7 +3,7 @@
     <x-page-section id="" narrower>
         <h2>Vstupné do sauny</h2>
         <p>V ceně je započteno zapůjčení 1 ks prostěradla po dobu pobytu v sauně.</p>
-        <table class="table-primary w-full">
+        <table class="table-primary max-w-full min-w-[30rem]">
             <tbody>
             <tr>
                 <th>1 hodina</th>
@@ -18,12 +18,12 @@
             </tbody>
         </table>
     </x-page-section>
-    <x-page-section highlighted>
+    <x-page-section highlighted narrower>
         <h2>Provozní hodiny sauny</h2>
         <p>Doba pobytu v sauně začíná příchodem přes turniket a končí odchodem přes turniket.</p>
         <div class="rounded-lg overflow-clip mt-8 mb-6 mt-8 mb-6">
         {{--  Musí to být na parent elementu jinak to neroundne border --}}
-            <table class="table-secondary w-full">
+            <table class="table-secondary max-w-full min-w-[36rem]">
                 <tbody>
                 <tr>
                     <th>Pondělí</th>
