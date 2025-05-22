@@ -3,7 +3,7 @@
     <label
 {{--        role="button"--}}
         for="faq{{$id}}"
-        class="icon-faq block relative cursor-pointer font-medium text-bs-blue-900 bg-bs-blue-200 bg-opacity-45 py-4 pl-4 pr-8 peer-checked:rounded-t-lg peer-checked:rounded-b-none rounded-lg peer-checked:border-b-bs-blue-300/75 peer-checked:border-b-2"
+        class="icon-faq block relative cursor-pointer font-medium text-bs-blue-900 bg-bs-blue-200 bg-opacity-45 py-4 pl-4 pr-8 peer-checked:rounded-t-lg peer-checked:rounded-b-none rounded-lg peer-checked:border-b-bs-blue-300/75 peer-checked:border-b-2 mb-0"
     >
         <p class="font-medium mb-0 text-bs-blue-900">{{$question}}</p>
     </label>

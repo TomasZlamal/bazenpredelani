@@ -8,7 +8,7 @@ Route::view('/bazen', 'bazen')->name('bazen');
 Route::view('/wellness', 'wellness')->name('wellness');
 Route::view('/cenik', 'cenik')->name('cenik');
 Route::view('/kontakt', 'kontakt')->name('kontakt');
-Route::view('/caste-otazky', 'faq')->name('faq');
+Route::view('/caste-dotazy', 'faq')->name('faq');
 Route::view('/dokumenty', 'dokumenty')->name('dokumenty');
 
 Route::view('/sluzby', 'sluzby')->name('sluzby');

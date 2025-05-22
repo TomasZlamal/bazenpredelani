@@ -3,74 +3,78 @@
     <x-page-section id="" narrower>
         <h2>Vstupné do sauny</h2>
         <p>V ceně je započteno zapůjčení 1 ks prostěradla po dobu pobytu v sauně.</p>
-        <table class="table-primary max-w-full min-w-[30rem]">
-            <tbody>
-            <tr>
-                <th>1 hodina</th>
-                <th>1.5 hodiny</th>
-                <th>2 hodiny</th>
-            </tr>
-            <tr>
-                <td>180,- Kč</td>
-                <td>260,- Kč</td>
-                <td>335,- Kč</td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="overflow-x-auto">
+            <table class="table-primary w-full max-w-full min-w-[30rem]">
+                <tbody>
+                <tr>
+                    <th>1 hodina</th>
+                    <th>1.5 hodiny</th>
+                    <th>2 hodiny</th>
+                </tr>
+                <tr>
+                    <td>180,- Kč</td>
+                    <td>260,- Kč</td>
+                    <td>335,- Kč</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </x-page-section>
     <x-page-section highlighted narrower>
         <h2>Provozní hodiny sauny</h2>
         <p>Doba pobytu v sauně začíná příchodem přes turniket a končí odchodem přes turniket.</p>
         <div class="rounded-lg overflow-clip mt-8 mb-6 mt-8 mb-6">
-        {{--  Musí to být na parent elementu jinak to neroundne border --}}
-            <table class="table-secondary max-w-full min-w-[36rem]">
-                <tbody>
-                <tr>
-                    <th>Pondělí</th>
-                    <td>MUŽI</td>
-                    <td>09,00 - 21,00 hod</td>
-                </tr>
-                <tr>
-                    <th rowspan="2">Úterý</th>
-                    <td class="without-underline">ŽENY</td>
-                    <td class="without-underline">09,00 - 14,00 hod</td>
-                </tr>
-                <tr>
-                    <td>SPOLEČNÁ</td>
-                    <td>14,00 - 21,00 hod</td>
-                </tr>
-                <tr>
-                    <th>Středa</th>
-                    <td>SPOLEČNÁ</td>
-                    <td>09,00 - 21,00 hod</td>
-                </tr>
-                <tr>
-                    <th>Čtvrtek</th>
-                    <td>ŽENY</td>
-                    <td>09,00 - 21,00 hod</td>
-                </tr>
-                <tr>
-                    <th>Pátek</th>
-                    <td>SPOLEČNÁ</td>
-                    <td>09,00 - 21,00 hod</td>
-                </tr>
-                <tr>
-                    <th>Sobota</th>
-                    <td>SPOLEČNÁ</td>
-                    <td>09,00 - 20,00 hod</td>
-                </tr>
-                <tr>
-                    <th>Neděle</th>
-                    <td>SPOLEČNÁ</td>
-                    <td>09,00 - 20,00 hod</td>
-                </tr>
-                <tr>
-                    <th>Státní svátky</th>
-                    <td>SPOLEČNÁ</td>
-                    <td>09,00 - 20,00 hod</td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="overflow-x-auto">
+                {{--  Musí to být na parent elementu jinak to neroundne border --}}
+                <table class="table-secondary w-full max-w-full min-w-[36rem]">
+                    <tbody>
+                    <tr>
+                        <th>Pondělí</th>
+                        <td>MUŽI</td>
+                        <td>09,00 - 21,00 hod</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Úterý</th>
+                        <td class="without-underline">ŽENY</td>
+                        <td class="without-underline">09,00 - 14,00 hod</td>
+                    </tr>
+                    <tr>
+                        <td>SPOLEČNÁ</td>
+                        <td>14,00 - 21,00 hod</td>
+                    </tr>
+                    <tr>
+                        <th>Středa</th>
+                        <td>SPOLEČNÁ</td>
+                        <td>09,00 - 21,00 hod</td>
+                    </tr>
+                    <tr>
+                        <th>Čtvrtek</th>
+                        <td>ŽENY</td>
+                        <td>09,00 - 21,00 hod</td>
+                    </tr>
+                    <tr>
+                        <th>Pátek</th>
+                        <td>SPOLEČNÁ</td>
+                        <td>09,00 - 21,00 hod</td>
+                    </tr>
+                    <tr>
+                        <th>Sobota</th>
+                        <td>SPOLEČNÁ</td>
+                        <td>09,00 - 20,00 hod</td>
+                    </tr>
+                    <tr>
+                        <th>Neděle</th>
+                        <td>SPOLEČNÁ</td>
+                        <td>09,00 - 20,00 hod</td>
+                    </tr>
+                    <tr>
+                        <th>Státní svátky</th>
+                        <td>SPOLEČNÁ</td>
+                        <td>09,00 - 20,00 hod</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </x-page-section>
     <x-page-section narrower>

@@ -62,8 +62,8 @@
                         
                         <x-footer.link href="/dostupnost">Máme otevřeno?</x-footer.link>
                         <x-footer.link href="/dostupnost#oteviraci_doba">Otevírací doba</x-footer.link>
-                        <x-footer.link href="/caste-otazky">Časté dotazy</x-footer.link>
-                        <x-footer.link href="/dostupnost#plan_akci">Plán akcí</x-footer.link>
+                        <x-footer.link href="/caste-dotazy">Časté dotazy</x-footer.link>
+                        <x-footer.link href="/dostupnost#kalendar_akci">Kalendář akcí</x-footer.link>
                         <x-footer.link :href="route('cenik')">Ceník</x-footer.link>
                         <x-footer.link :href="route('dokumenty')">Dokumenty</x-footer.link>
                     </ul>

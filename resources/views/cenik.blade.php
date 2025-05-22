@@ -61,61 +61,65 @@
         
         <h2 id="vstupne">Jednorázové vstupné do bazénu</h2>
         <h3>Po zavření vnitřního bazénu</h3>
-        <table class="table-primary first-cell-highlight w-full">
-            <tr>
-                <th>Časy</th>
-                <th>Plnocenné</th>
-                <th>Slevové</th>
-                <th>Rodinné</th>
-            </tr>
-            <tr>
-                <td>1.5 hodin</td>
-                <td>100kč</td>
-                <td>100kč</td>
-                <td>100kč</td>
-            </tr>
-            <tr>
-                <td>3 hodiny</td>
-                <td>100kč</td>
-                <td>100kč</td>
-                <td>100kč</td>
-            </tr>
-            <tr>
-                <td>Celodenní</td>
-                <td>100kč</td>
-                <td>100kč</td>
-                <td>100kč</td>
-            </tr>
-
-        </table>
+        <div class="overflow-x-auto">
+            <table class="table-primary first-cell-highlight w-full">
+                <tr>
+                    <th>Časy</th>
+                    <th>Plnocenné</th>
+                    <th>Slevové</th>
+                    <th>Rodinné</th>
+                </tr>
+                <tr>
+                    <td>1.5 hodin</td>
+                    <td>100kč</td>
+                    <td>100kč</td>
+                    <td>100kč</td>
+                </tr>
+                <tr>
+                    <td>3 hodiny</td>
+                    <td>100kč</td>
+                    <td>100kč</td>
+                    <td>100kč</td>
+                </tr>
+                <tr>
+                    <td>Celodenní</td>
+                    <td>100kč</td>
+                    <td>100kč</td>
+                    <td>100kč</td>
+                </tr>
+            
+            </table>
+        </div>
         <h3>Před zavřením vnitřního bazénu</h3>
-        <table class="table-primary first-cell-highlight w-full">
-            <tr>
-                <th>Časy</th>
-                <th>Plnocenné</th>
-                <th>Slevové</th>
-                <th>Rodinné</th>
-            </tr>
-            <tr>
-                <td>1.5 hodin</td>
-                <td>100kč</td>
-                <td>100kč</td>
-                <td>100kč</td>
-            </tr>
-            <tr>
-                <td>3 hodiny</td>
-                <td>100kč</td>
-                <td>100kč</td>
-                <td>100kč</td>
-            </tr>
-            <tr>
-                <td>Celodenní</td>
-                <td>100kč</td>
-                <td>100kč</td>
-                <td>100kč</td>
-            </tr>
-
-        </table>
+        <div class="overflow-x-auto">
+            <table class="table-primary first-cell-highlight w-full">
+                <tr>
+                    <th>Časy</th>
+                    <th>Plnocenné</th>
+                    <th>Slevové</th>
+                    <th>Rodinné</th>
+                </tr>
+                <tr>
+                    <td>1.5 hodin</td>
+                    <td>100kč</td>
+                    <td>100kč</td>
+                    <td>100kč</td>
+                </tr>
+                <tr>
+                    <td>3 hodiny</td>
+                    <td>100kč</td>
+                    <td>100kč</td>
+                    <td>100kč</td>
+                </tr>
+                <tr>
+                    <td>Celodenní</td>
+                    <td>100kč</td>
+                    <td>100kč</td>
+                    <td>100kč</td>
+                </tr>
+    
+            </table>
+        </div>
     </x-page-section>
 
     <x-page-section highlighted narrower>
@@ -193,20 +197,22 @@ ODSTOUPENÍ OD KUPNÍ SMLOUVY PŘI ZAKOUPENÍ ZBOŽÍ JE MOŽNÉ DO 14 DNŮ BEZ 
     </x-page-section>
     <x-page-section narrower>
         <h2 id="jednorazovesauna">Jednorázové vstupné do sauny</h2>
-<table class="table-primary first-cell-highlight w-full">
-            <tr>
-                <th></th>
-                <th>do 1 hodiny</th>
-                <th>do 1.5 hodiny</th>
-                <th>do 2 hodin</th>
-            </tr>
-            <tr>
-                <td>plné</td>
-                <td>100kč</td>
-                <td>130kč</td>
-                <td>180kč</td>
-            </tr>
-        </table>
+        <div class="overflow-x-auto">
+            <table class="table-primary first-cell-highlight w-full">
+                <tr>
+                    <th></th>
+                    <th>do 1 hodiny</th>
+                    <th>do 1.5 hodiny</th>
+                    <th>do 2 hodin</th>
+                </tr>
+                <tr>
+                    <td>plné</td>
+                    <td>100kč</td>
+                    <td>130kč</td>
+                    <td>180kč</td>
+                </tr>
+            </table>
+        </div>
 
         <p>Pro všechny výše uvedené tarify a tarify organizací platí následující pravidlo:
 Za každou překročenou minutu je účtován doplatek 2,- Kč / minuta (při pobytu v bazénu) nebo 4,- Kč / minuta (při pobytu v sauně), a to bez ohledu na to, zda se jedná o zakoupené plné či slevové vstupné.

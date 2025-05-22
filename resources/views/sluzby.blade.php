@@ -3,7 +3,7 @@
     <x-page-section class="flex flex-row gap-8 flex-wrap">
             <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 justify-center">
                 <x-image-card-with-link
-                    href="bazen#divoka_reka"
+                    href="https://www.fitnesscity.cz/"
                     :img-url="getImage('fitness_city.jpg')"
                     caption="Fitness City"
                     class="aspect-square"

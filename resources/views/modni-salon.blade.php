@@ -30,7 +30,7 @@
         <ul>
             <li class="text-lg"><strong class="font-semibold">Barvení:</strong> krátké a dlouhé vlasy</li>
             <li class="text-lg"><strong class="font-semibold">Foukaná:</strong> krátké a dlouhé vlasy</li>
-            <li class="text-lg"><strong class="font-semibold">Lakování:</strong> vlasů</li>
+            <li class="text-lg"><strong class="font-semibold">Lakování vlasů</strong></li>
             <li class="text-lg"><strong class="font-semibold">Melír:</strong> odbarvení melírem, krátké a dlouhé vlasy</li>
             <li class="text-lg"><strong class="font-semibold">Mytí vlasů</strong></li>
             <li class="text-lg"><strong class="font-semibold">Pěnové tužidlo:</strong> klasické a barevné</li>

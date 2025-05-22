@@ -42,7 +42,7 @@
         <div class="max-width-container grid lg:grid-cols-5 grid-cols-1 gap-x-16 gap-y-8">
             <div class="lg:col-span-2">
                 <h2 class="mt-0">Časté dotazy</h2>
-                <p>Máte i nadále otázky? Zavolejte nám na <a class="font-normal" href="tel:+420377240306">informace</a> a rádi vám poradíme.</p>
+                <p>Máte i nadále otázky? Zavolejte nám na <a class="font-normal text-inherit" href="tel:+420377240306">informace</a> a rádi vám poradíme.</p>
                 <a class="icon-link-arrow font-normal" href="{{route('faq')}}">Všechny časté dotazy</a>
             
             </div>
@@ -62,7 +62,7 @@
                 </x-faq-card>
                 <x-faq-card question="Jak a kde zjistím, kdy je bazén uzavřený pro veřejnost?">
                     Uzavírky a změny otevírací doby jsou uvedeny v sekci <a href="/dostupnost">dostupnost</a>, případně na na
-                    <a href="https://www.facebook.com/bazen.slovany">facebooku</a> bazénu a na informačních nástěnkách v areálu.
+                    <a target="_blank" href="https://www.facebook.com/bazen.slovany">facebooku</a> bazénu a na informačních nástěnkách v areálu.
                 </x-faq-card>
                 <x-faq-card question="Jak mohu využít kartu Multisport v areálu bazénu Slovany?">
                     Držitelé karty Multisport mají nárok na 90 minut vstupu do bazénu nebo 60 minut do sauny.
@@ -116,7 +116,7 @@
 
                 <x-image-card-with-link
                     class="lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 md:col-start-3 md:col-end-6 md:row-start-3 md:row-end-4 md:aspect-[initial] aspect-16/9"
-                    href="/sauna"
+                    href="/wellness"
                     :img-url="getImage('sauna_a_para.jpg')"
                     caption="Sauna a pára"
                 />

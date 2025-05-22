@@ -282,6 +282,15 @@
     }
 }
 @layer components {
+    input, textarea, select {
+        @apply px-5 py-4 bg-bs-grey-150 rounded-lg block border border-bs-grey-300 w-full;
+    }
+    label {
+        @apply inline-block mb-1.5 text-lg;
+    }
+    hr {
+        @apply text-bs-grey-300 my-10 block;
+    }
 
 }
 @layer utilities {
